@@ -6,12 +6,12 @@ const HardwareCollections = () => {
     <div className="">
       <Categories
         title={"Business Card"}
-        titleImage={"/assets/hardware/collection/card/MetalGoldcards.svg"}
+        titleImage={"/assets/hardware/collection/card/businessCard.png"}
         products={hardwareCollections.BusinessCards}
       />
       <Categories
         title={"Phone Attachments"}
-        titleImage={"/assets/hardware/collection/PhoneAttachments/iphones.svg"}
+        titleImage={"/assets/hardware/collection/PhoneAttachments/iphones.png"}
         products={hardwareCollections.PhoneAttachments}
       />
       <Categories
@@ -23,7 +23,7 @@ const HardwareCollections = () => {
       />
       <Categories
         title={"Pets"}
-        titleImage={"/assets/hardware/collection/pets/pets.svg"}
+        titleImage={"/assets/hardware/collection/pets/pets.png"}
         products={hardwareCollections.Pets}
       />
       <Categories

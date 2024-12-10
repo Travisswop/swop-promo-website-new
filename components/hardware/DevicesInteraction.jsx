@@ -8,7 +8,7 @@ import Image from "next/image";
 const productInfo = [
   {
     size: "20mm",
-    img: "/assets/hardware/products/business-cards.svg",
+    img: "/assets/hardware/products/businessCards.png",
     title: "Business Cards",
     slug: "business-cards",
     decs: `Upgrade from traditional paper cards with Swop’s reusable digital cards that collect data for your company`,
@@ -60,7 +60,7 @@ const DevicesInteraction = () => {
     <SectionLayout className="relative">
       <ScrollMotionEffect effect="fade-up" duration="2000">
         <h2
-          className={`text-stone-950 font-medium text-5xl md:text-4xl text-center !leading-none py-5`}
+          className={`text-stone-950 font-medium text-3xl md:text-4xl lg:text-5xl text-center !leading-none py-5`}
         >
           Devices for Any <span className="block">Interaction</span>
         </h2>
@@ -68,7 +68,7 @@ const DevicesInteraction = () => {
           effect="zoom-in"
           duration="2000"
           delay={"1000"}
-          className="absolute top-[-20%] left-[-2%]  md:top-0 md:left-[15%]  lg:left-[25%] animate-bounce"
+          className="absolute top-[-20%] left-[-2%]  md:top-0 md:left-[15%]  lg:left-[25%] animate-bounce -z-10"
         >
           <Image
             src="/assets/star.svg"
@@ -82,7 +82,7 @@ const DevicesInteraction = () => {
           effect="zoom-in"
           duration="2000"
           delay={"500"}
-          className="absolute bottom-[-90%] left-[-3%] md:bottom-[-100%] md:left-[5%] lg:left-[12%]  xl:left-[17%] animate-bounce"
+          className="absolute bottom-[-200%] left-[-3%] md:bottom-[-120%] md:left-[5%] lg:left-[12%]  xl:left-[17%] animate-bounce"
         >
           <Image
             src="/assets/star.svg"
@@ -96,7 +96,7 @@ const DevicesInteraction = () => {
           effect="zoom-in"
           duration="2000"
           delay={"1000"}
-          className="absolute top-20 right-[0%] md:top-0 md:right-[20%]  animate-bounce"
+          className="absolute -top-5 right-[0%] md:top-0 md:right-[20%]  animate-bounce"
         >
           <Image
             src="/assets/star.svg"
@@ -124,7 +124,7 @@ const DevicesInteraction = () => {
           effect="zoom-in"
           duration="2000"
           delay={"1000"}
-          className="absolute bottom-[-100%] right-[10%] md:bottom-[-120%]  md:right-[25%] animate-bounce"
+          className="absolute bottom-[-190%] right-[10%] md:bottom-[-120%]  md:right-[25%] animate-bounce"
         >
           <Image
             src="/assets/star.svg"

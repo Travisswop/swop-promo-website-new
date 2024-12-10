@@ -22,7 +22,7 @@ const Form = () => {
             <div className="mb-5 w-full ">
               <label
                 htmlFor="employees"
-                className="text-gray-500 text-sm  font-semibold"
+                className="text-gray-500 xs:text-xs sm:text-sm  font-semibold"
               >
                 Number of Employees
               </label>
@@ -39,7 +39,7 @@ const Form = () => {
             <div className="w-full mb-5">
               <label
                 htmlFor="cards"
-                className="text-gray-500 text-sm  font-semibold"
+                className="text-gray-500 xs:text-xs sm:text-sm  font-semibold"
               >
                 Number of Business Cards Per Employee
               </label>
@@ -55,7 +55,7 @@ const Form = () => {
             <div className="w-full mb-5">
               <label
                 htmlFor="avgCost"
-                className="text-gray-500 text-sm  font-semibold"
+                className="text-gray-500 xs:text-xs sm:text-sm  font-semibold"
               >
                 Average Cost Per Business Card
               </label>
@@ -67,7 +67,7 @@ const Form = () => {
                 value={avgCost}
                 onChange={(e) => setAvgCost(e.target.value)}
               />
-              <label htmlFor="avgCost" className="text-gray-500 text-[12px] ">
+              <label htmlFor="avgCost" className="text-gray-500  text-xs ">
                 Paper card average is $.25-$.5 per card
               </label>
             </div>

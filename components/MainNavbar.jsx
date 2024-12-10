@@ -114,7 +114,7 @@ const MainNavbar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem className="">
-          <Link href={"https://swop-desktop.vercel.app"} target="_blank">
+          <Link href={"https://desktop-app-psi.vercel.app/"} target="_blank">
             <div className="bg-[#F6F6F6] p-2 md:p-3 rounded-full">
               <LuUserRound className="w-4 h-4 md:w-7 md:h-7 text-[#282828] hover:text-[#AF97D4]" />
             </div>

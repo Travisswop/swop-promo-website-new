@@ -10,7 +10,7 @@ const SmartSite = () => {
       effect="fade-up"
       duration="2000"
       className={
-        "min-w-[330px] h-full m-auto row-span-2 bg-[#F5F5F5] rounded-xl md:col-start-2 md:row-start-1 2xl:row-start-1 2xl:col-start-2"
+        "max-w-[420px] md:w-full h-full m-auto row-span-2 bg-[#F5F5F5] rounded-xl md:col-start-2 md:row-start-1 2xl:row-start-1 2xl:col-start-2"
       }
     >
       <div className="bg-[#F5F5F5] rounded-2xl p-4 w-full h-full flex flex-col justify-between">
@@ -26,6 +26,7 @@ const SmartSite = () => {
           width={350}
           height={380}
           className="m-auto relative left-3"
+          quality={100}
         />
         <div>
           <h4 className="text-base text-center text-gray-400">

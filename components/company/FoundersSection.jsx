@@ -89,7 +89,7 @@ const FoundersSection = () => {
         </p>
       </ScrollMotionEffect>
 
-      <div className="grid items-start justify-center grid-cols-1 mt-24 md:grid-cols-3 gap-14">
+      <div className="grid items-start justify-center grid-cols-1 mt-10 md:mt-24 md:grid-cols-3 gap-14">
         {linkInfo?.map((el, index) => (
           <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
             <div className="">

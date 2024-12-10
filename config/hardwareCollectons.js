@@ -116,7 +116,7 @@ export const hardwareCollections = {
     {
       id: 1,
       name: "Stickers",
-      image: "/assets/hardware/collection/stickers/planegoldensticker.svg",
+      image: "/assets/hardware/collection/stickers/planegoldensticker.png",
       price: 19.99,
     },
     {
