@@ -435,6 +435,20 @@ import { RiServiceLine } from "react-icons/ri";
 import { MdOutlineSell } from "react-icons/md";
 import { GrAnalytics } from "react-icons/gr";
 
+import { cn } from "@nextui-org/react";
+const Icons = ({ icon, title, scale }) => {
+  return (
+    <Image
+      src={icon}
+      alt={title}
+      className={cn("", scale && "scale-90 ")}
+      width={80}
+      height={80}
+      quality={100}
+    />
+  );
+};
+
 const ConectMobileSection = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [playVideo, setPlayVideo] = useState(false);
@@ -448,21 +462,21 @@ const ConectMobileSection = () => {
     () => [
       {
         id: 1,
-        icon: RiUserFollowLine,
+        icon: "/assets/software/connection.png",
         title: "Connection/ Follow",
         imageUrl: "/assets/video/businesscards.png",
         videoUrl: "/assets/video/software-connection-follow.mp4",
       },
       {
         id: 2,
-        icon: IoAnalyticsOutline,
+        icon: "/assets/software/lead.png",
         title: "Lead Generation",
         imageUrl: "/assets/video/wearables.png",
         videoUrl: "/assets/video/software-lead-generation.mp4",
       },
       {
         id: 3,
-        icon: RiServiceLine,
+        icon: "/assets/software/customer.png",
         title: "Customer Rentention",
         imageUrl: "/assets/video/transactions.png",
         videoUrl: "/assets/video/customer-rentention.mp4",
@@ -475,21 +489,21 @@ const ConectMobileSection = () => {
     () => [
       {
         id: 4,
-        icon: GrTransaction,
+        icon: "/assets/software/tranc.png",
         title: "Transactions",
         imageUrl: "/assets/video/restaurants.png",
         videoUrl: "/assets/video/transactions.mp4",
       },
       {
         id: 5,
-        icon: MdOutlineSell,
+        icon: "/assets/software/sell.png",
         title: "Sell Products",
         imageUrl: "/assets/video/customize.png",
         videoUrl: "/assets/video/cstomizable-crad-tapp.mp4",
       },
       {
         id: 6,
-        icon: GrAnalytics,
+        icon: "/assets/software/analytics.png",
         title: "Analytics",
         imageUrl: "/assets/video/embeddables.png",
         videoUrl: "/assets/video/analytics.mp4",
@@ -616,7 +630,7 @@ const ConectMobileSection = () => {
         </ScrollMotionEffect>
       </div> */}
 
-      <div className="hidden md:block max-w-[400px] h-[520px] mx-auto mt-8">
+      <div className="hidden md:block max-w-[400px] h-[520px] mx-auto">
         {hoverImgUrl ? (
           <motion.div
             key={hoverImgUrl}
@@ -766,10 +780,10 @@ const ConectMobileSection = () => {
           {featuresInfoLeft.map((el) => (
             <div
               key={el.id}
-              className={`p-2 bg-white rounded-full w-28 h-28 flex flex-col items-center justify-center border border-[#737373] ${hoveredItem === el.id ? "shadow-xl" : ""}`}
+              className={`p-2  rounded-full w-28 h-28 flex flex-col items-center justify-center  ${hoveredItem === el.id ? "" : ""}`}
               onMouseEnter={() => hoverItemSelect(el)}
             >
-              <el.icon className="w-6 h-6 text-[#737373]" />
+              <Icons icon={el.icon} title={el.title} />
               <h2 className="mt-2 text-sm text-[#737373] text-center font-normal leading-5">
                 {el.title}
               </h2>
@@ -800,14 +814,14 @@ const ConectMobileSection = () => {
           </motion.div>
         </div>
 
-        <div className="hidden md:flex flex-col justify-start gap-10 md:gap-28 mx-auto bg-white ml-[-2px]">
+        <div className="hidden md:flex flex-col justify-start gap-10 md:gap-28 mx-auto  ml-[-2px]">
           {featuresInfoRight.map((el) => (
             <div
               key={el.id}
-              className={`p-2 bg-white rounded-full w-28 h-28 flex flex-col items-center justify-center border border-[#737373] ${hoveredItem === el.id ? "shadow-xl" : ""}`}
+              className={`p-2  rounded-full w-28 h-28 flex flex-col items-center justify-center  ${hoveredItem === el.id ? "" : ""}`}
               onMouseEnter={() => hoverItemSelect(el)}
             >
-              <el.icon className="w-6 h-6 text-[#737373]" />
+              <Icons icon={el.icon} title={el.title} />
               <h2 className="mt-1 text-sm leading-5 text-[#737373] text-center font-normal">
                 {el.title}
               </h2>
@@ -815,14 +829,14 @@ const ConectMobileSection = () => {
           ))}
         </div>
 
-        <div className="grid justify-center grid-cols-3 mx-auto mt-3 bg-white gap-x-5 gap-y-3 md:hidden">
+        <div className="grid justify-center grid-cols-3 mx-auto mt-3  gap-x-5 gap-y-8 md:hidden">
           {featuresInfoAll.map((el) => (
             <div
               key={el.id}
-              className={`p-2 bg-white rounded-full size-20 flex flex-col items-center justify-center border border-[#737373] ${hoveredItem === el.id ? "shadow-xl" : ""}`}
+              className={`p-2  rounded-full size-20 flex flex-col items-center justify-center  ${hoveredItem === el.id ? "" : ""}`}
               onMouseEnter={() => hoverItemSelect(el)}
             >
-              <el.icon className="size-4 text-[#737373]" />
+              <Icons icon={el.icon} title={el.title} scale={el.scale} />
               <h2 className="mt-1 text-[10px] leading-2 text-[#737373] text-center font-normal">
                 {el.title}
               </h2>
