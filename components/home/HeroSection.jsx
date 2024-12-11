@@ -24,13 +24,7 @@ const HeroSection = () => {
   return (
     <SectionLayout bg={"bg-transparent"}>
       <div className="z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
-        <motion.div
-          className="flex-1"
-          initial="hidden"
-          animate="visible"
-          exit={{ opacity: 0, transition: { duration: 0.1 } }}
-          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-        >
+        <div>
           <ScrollMotionEffect effect="flip-up" duration="1000">
             <h1
               className={cn(
@@ -70,7 +64,7 @@ const HeroSection = () => {
           </div>
           <div className="flex justify-center gap-4 pt-8 md:pt-12">
             <Link href="href">
-              <ScrollMotionEffect effect="zoom-in" duration="1000">
+              <ScrollMotionEffect effect="zoom-in" duration="2000">
                 <Image
                   src="/assets/home/app-store.png"
                   alt="appStore"
@@ -80,7 +74,7 @@ const HeroSection = () => {
               </ScrollMotionEffect>
             </Link>
             <Link href="href">
-              <ScrollMotionEffect effect="zoom-in" duration="500">
+              <ScrollMotionEffect effect="zoom-in" duration="2000">
                 <Image
                   src="/assets/home/google-play.png"
                   alt="googlePlay"
@@ -90,7 +84,7 @@ const HeroSection = () => {
               </ScrollMotionEffect>
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </SectionLayout>
 
