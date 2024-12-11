@@ -32,7 +32,7 @@ experiences with just a tap.`,
   },
   {
     size: "20mm",
-    img: "/assets/hardware/products/customize2.svg",
+    img: "/assets/hardware/products/customize3.png",
     title: "Customize",
     slug: "customize",
     decs: `Upgrade from traditional paper cards with Swop’s reusable digital cards that collect data for your company`,
