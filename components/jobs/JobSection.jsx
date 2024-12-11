@@ -370,7 +370,7 @@ const JobSection = () => {
         </p>
       </ScrollMotionEffect>
 
-      <div className="mx-6 md:mx-32 mt-16 ">
+      <div className=" md:mx-32 mt-16 ">
         <ScrollMotionEffect effect="fade-up" duration="2000">
           <Accordion
             selectedKeys={selectedKeys}

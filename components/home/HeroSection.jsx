@@ -28,7 +28,7 @@ const HeroSection = () => {
           className="flex-1"
           initial="hidden"
           animate="visible"
-          exit={{ opacity: 0, transition: { duration: 1 } }}
+          exit={{ opacity: 0, transition: { duration: 0.1 } }}
           variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
         >
           <ScrollMotionEffect effect="flip-up" duration="1000">
@@ -77,17 +77,19 @@ const HeroSection = () => {
                   width={120}
                   height={120}
                   quality={100}
+                  priority
                 />
               </ScrollMotionEffect>
             </Link>
             <Link href="href">
-              <ScrollMotionEffect effect="zoom-in" duration="1000">
+              <ScrollMotionEffect effect="zoom-in" duration="500">
                 <Image
                   src="/assets/home/google-play.png"
                   alt="googlePlay"
                   width={120}
                   height={120}
                   quality={100}
+                  priority
                 />
               </ScrollMotionEffect>
             </Link>

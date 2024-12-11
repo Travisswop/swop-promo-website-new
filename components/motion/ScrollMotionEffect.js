@@ -1,11 +1,17 @@
-'use client';
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const ScrollMotionEffect = ({ children, effect, duration,className, delay }) => {
+const ScrollMotionEffect = ({
+  children,
+  effect,
+  duration,
+  className,
+  delay,
+}) => {
   useEffect(() => {
-    console.log('Initializing AOS');
+    console.log("Initializing AOS");
     AOS.init();
     AOS.refresh();
 
@@ -13,9 +19,9 @@ const ScrollMotionEffect = ({ children, effect, duration,className, delay }) => 
       AOS.refresh();
     };
   }, []);
-if(delay===undefined || delay===null){
-  delay=0
-}
+  if (delay === undefined || delay === null || delay === 0) {
+    delay = 0;
+  }
   return (
     <div
       data-aos={effect}
