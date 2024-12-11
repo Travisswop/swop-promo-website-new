@@ -1,7 +1,6 @@
 "use client";
 import React, { useMemo } from "react";
 import SectionLayout from "../shared/SectionLayout";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { Fira_Code } from "next/font/google";
 import { cn } from "@nextui-org/react";
@@ -13,14 +12,6 @@ const fira = Fira_Code({
   weight: ["400", "500", "600", "700"],
 });
 const HeroSection = () => {
-  const variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
-  const text1 = useMemo(() => "The Digital Business Card".split("  "), []);
-  const text2 = useMemo(() => "That Pays You to Network".split("  "), []);
-
   return (
     <SectionLayout bg={"bg-transparent"}>
       <div className="z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
@@ -149,4 +140,4 @@ const HeroSection = () => {
   );
 };
 
-export default React.memo(HeroSection);
+export default HeroSection;
