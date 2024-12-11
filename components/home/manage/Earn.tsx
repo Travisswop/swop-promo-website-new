@@ -8,7 +8,7 @@ const Earn = () => {
       effect="fade-up"
       duration="2000"
       className={
-        "max-w-[330px] lg:max-w-full h-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
+        "max-w-[330px] lg:max-w-full h-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center overflow-hidden"
       }
     >
       {/* <Image
@@ -19,7 +19,7 @@ const Earn = () => {
         className="text-center"
       /> */}
 
-      <div className=" w-[150px]   h-[150px] xl:h-[220px] xl:w-[220px]">
+      <div className="h-[150px] xl:h-[220px] w-full relative ">
         <video
           autoPlay
           loop
@@ -27,17 +27,18 @@ const Earn = () => {
           playsInline
           preload="auto"
           style={{ display: "block" }}
+          className="h-[300px]  w-[100%] scale-90 -translate-y-3 lg:scale-100  -z-50 overflow-hidden absolute  top-0 left-0 right-0 bottom-0 lg:-translate-y-5 xl:translate-y-5"
         >
           <source src="/assets/home/manage/earn.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
-      <div>
-        <h3 className="font-semibold text-lg text-center py-2">Earn</h3>
+      <div className="bg-white w-full">
+        <h3 className="font-semibold text-lg text-center py-2 z-40">Earn</h3>
       </div>
-      <div>
-        <h4 className="text-base text-center text-gray-400">
+      <div className="bg-white w-full">
+        <h4 className="text-base text-center text-gray-400 z-40">
           Tag¹ facilitates an instant and connection. Activate immersive brand
           experiences with just a tap.
         </h4>

@@ -16,10 +16,10 @@ const HeroSection = () => {
     <SectionLayout bg={"bg-transparent"}>
       <div className="z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
         <div>
-          <ScrollMotionEffect effect="flip-up" duration="1000">
+          <ScrollMotionEffect effect="flip-up" duration="2000">
             <h1
               className={cn(
-                "text-3xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
+                "text-4xl md:text-6xl font-bold text-black text-center leading-tight tracking-normal pt-5 md:pt-0 [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
                 fira.className
               )}
             >
