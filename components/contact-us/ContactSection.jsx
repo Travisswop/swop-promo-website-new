@@ -116,6 +116,7 @@ const ContactSection = () => {
                 height={400}
                 src={"/assets/contact/mail.png"}
                 alt="Mail"
+                quality={100}
               />
             </div>{" "}
           </ScrollMotionEffect>

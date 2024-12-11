@@ -37,12 +37,14 @@ const AvailableForAllDevices = () => {
                   src="/assets/home/google-play.png"
                   alt="Available For All Devices"
                   className="w-[100px] md:w-[120px] lg:w-[140px]"
+                  quality={100}
                 />
                 <Image
                   width={500}
                   height={150}
                   src="/assets/home/app-store.png"
                   alt="Available For All Devices"
+                  quality={100}
                   className="w-[100px] md:w-[120px] lg:w-[140px]"
                 />
               </div>
@@ -57,6 +59,7 @@ const AvailableForAllDevices = () => {
               src={"/assets/home/all-devices.png"}
               alt="Available For All Devices"
               className="mx-auto"
+              quality={100}
             />
           </div>{" "}
         </ScrollMotionEffect>

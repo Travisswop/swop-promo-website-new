@@ -20,6 +20,7 @@ const Analytics = () => {
           width={500}
           height={185}
           content="cover"
+          quality={100}
           className="m-auto absolute top-0 left-0 right-0 bottom-0 overflow-hidden rounded-2xl"
         />
       </div>

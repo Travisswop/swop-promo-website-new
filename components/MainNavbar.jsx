@@ -68,6 +68,7 @@ const MainNavbar = () => {
               width={150}
               height={100}
               className="w-[90px] md:w-[150px] h-auto"
+              quality={100}
               priority
             />
           </Link>
@@ -85,6 +86,7 @@ const MainNavbar = () => {
               alt="Swop Logo"
               width={50}
               height={50}
+              quality={100}
               priority
             />
           </Link>

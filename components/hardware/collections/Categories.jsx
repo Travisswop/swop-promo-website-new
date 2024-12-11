@@ -24,6 +24,7 @@ const Categories = ({ title, titleImage, products }) => {
             height={100}
             width={100}
             className="absolute top-0 left-0 h-full w-full -z-10 hidden lg:block"
+            quality={100}
           />
           <Image
             src="/assets/hardware/collection/mobileBg.svg"

@@ -34,6 +34,7 @@ const Footer = () => {
                   src="/assets/site-logo/swop-logo.png"
                   alt="Swop"
                   className="object-cover"
+                  quality={100}
                   priority
                 />
               </Link>
@@ -60,6 +61,7 @@ const Footer = () => {
                   src="/assets/site-logo/qr-code.png"
                   alt="Swop QR Code"
                   className=""
+                  quality={100}
                   priority
                 />
                 <p className="text-black font-normal text-sm md:text-base text-center w-28 !leading-5 mt-2">

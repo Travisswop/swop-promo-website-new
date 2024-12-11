@@ -31,6 +31,7 @@ const InteractiveSection = () => {
             width={50}
             height={50}
             className=""
+            quality={100}
           />
         </ScrollMotionEffect>
         <ScrollMotionEffect

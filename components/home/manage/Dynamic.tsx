@@ -17,6 +17,7 @@ const Dynamic = () => {
         width={147}
         height={210}
         className="text-center "
+        quality={100}
       />
 
       <div>

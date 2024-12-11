@@ -28,6 +28,7 @@ const Icons = ({ icon, title, scale }) => {
       className={cn("", scale && "scale-90 ")}
       width={80}
       height={80}
+      quality={100}
     />
   );
 };
@@ -257,6 +258,7 @@ const ConectMobileSection = () => {
                 src={hoverImgUrl}
                 alt="Link icon"
                 className="mx-auto"
+                quality={100}
               />
             )}
           </motion.div>
@@ -280,6 +282,7 @@ const ConectMobileSection = () => {
               src={"/assets/site-logo/chipicon.png"}
               alt="Link icon"
               className="mx-auto"
+              quality={100}
             />
           </motion.div>
         )}
@@ -325,6 +328,7 @@ const ConectMobileSection = () => {
                 height={100}
                 src={hoverImgUrl}
                 alt="Link icon"
+                quality={100}
                 className="mx-auto"
               />
             )}
@@ -348,6 +352,7 @@ const ConectMobileSection = () => {
               height={90}
               src={"/assets/site-logo/chipicon.png"}
               alt="Link icon"
+              quality={100}
               className="mx-auto"
             />
           </motion.div>

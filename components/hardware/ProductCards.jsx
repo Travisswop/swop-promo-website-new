@@ -26,6 +26,7 @@ const ProductCards = ({ productList }) => {
                   style={{ objectFit: "contain" }}
                   className="w-full object-cover h-auto lg:h-[420px] "
                   src={el.img}
+                  quality={100}
                 />
                 <h2 className="mt-3 text-lg  text-stone-950 text-center font-bold pb-2">
                   {el.title}

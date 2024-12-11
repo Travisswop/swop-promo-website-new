@@ -18,6 +18,7 @@ const Bank = () => {
           alt="bank"
           width={300}
           height={150}
+          quality={100}
           className="m-auto absolute top-0 left-0 right-0 bottom-0 scale-125 md:scale-150"
         />
       </div>

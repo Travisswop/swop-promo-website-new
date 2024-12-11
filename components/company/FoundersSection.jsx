@@ -100,6 +100,7 @@ const FoundersSection = () => {
                   src={el.img}
                   alt="Company"
                   className="mx-auto"
+                  quality={100}
                 />
               </div>
               <h2 className="mt-4 font-bold text-center text:md md:text-xl text-stone-950">
