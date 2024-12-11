@@ -27,9 +27,9 @@ const Earn = () => {
           playsInline
           preload="auto"
           style={{ display: "block" }}
-          className="h-[300px]  w-[100%] scale-90 -translate-y-3 lg:scale-100  -z-50 overflow-hidden absolute  top-0 left-0 right-0 bottom-0 lg:-translate-y-5 xl:translate-y-5"
+          className="h-[300px]  w-[100%] scale-90 -translate-y-8 lg:scale-100  -z-50 overflow-hidden absolute  top-0 left-0 right-0 bottom-0 xl:translate-y-5"
         >
-          <source src="/assets/home/manage/earn.mp4" type="video/mp4" />
+          <source src="/assets/home/manage/earn2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
