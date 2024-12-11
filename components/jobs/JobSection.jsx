@@ -1,14 +1,14 @@
-'use client';
-import React, { useState } from 'react';
-import SectionLayout from '../shared/SectionLayout';
-import parse from 'html-react-parser';
-import { Accordion, AccordionItem } from '@nextui-org/react';
-import ScrollMotionEffect from '../motion/ScrollMotionEffect';
+"use client";
+import React, { useState } from "react";
+import SectionLayout from "../shared/SectionLayout";
+import parse from "html-react-parser";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const jobsPostInfo = [
   {
     id: 1,
-    jobTitle: 'Technical Leads (Engineer Manager)',
+    jobTitle: "Technical Leads (Engineer Manager)",
     jobDesc: `
       <div>
         <h5 class='text-lg font-semibold mb-4'>
@@ -93,7 +93,7 @@ const jobsPostInfo = [
   },
   {
     id: 2,
-    jobTitle: 'Sr. Software Engineer (Backend)',
+    jobTitle: "Sr. Software Engineer (Backend)",
     jobDesc: `
       <div>
         <h5 class='text-lg font-semibold mb-4'>
@@ -178,7 +178,7 @@ const jobsPostInfo = [
   },
   {
     id: 3,
-    jobTitle: 'Sr. Software Engineer (React Frontend)',
+    jobTitle: "Sr. Software Engineer (React Frontend)",
     jobDesc: `
       <div>
         <h5 class='text-lg font-semibold mb-4'>
@@ -263,7 +263,7 @@ const jobsPostInfo = [
   },
   {
     id: 4,
-    jobTitle: 'Sr. Digital Product Designer',
+    jobTitle: "Sr. Digital Product Designer",
     jobDesc: `
       <div>
         <h5 class='text-lg font-semibold mb-4'>
@@ -349,41 +349,45 @@ const jobsPostInfo = [
 ];
 
 const JobSection = () => {
-  const [selectedKeys, setSelectedKeys] = React.useState(new Set(['1']));
+  const [selectedKeys, setSelectedKeys] = React.useState(new Set(["1"]));
 
   return (
     <SectionLayout>
-      <ScrollMotionEffect effect='fade-up' duration='2000'>
+      <ScrollMotionEffect
+        effect="fade-up"
+        duration="2000"
+        className={"tracking-tighter"}
+      >
         <h2
-          className={`text-stone-950 font-normal text-2xl md:text-4xl text-center !leading-none`}
+          className={`text-stone-950 font-normal text-xl md:text-3xl text-center !leading-none`}
         >
           <strong>Jobs</strong>
         </h2>
-        <p className='text-lg md:text-xl text-stone-950 text-center mt-4 max-w-[620px] mx-auto'>
+        <p className="text-md md:text-lg text-stone-950 text-center mt-4 max-w-[620px] mx-auto leading-tight">
           Discover rewarding career paths, innovative work environments, and the
           chance to grow with us. Find your perfect job and start making an
           impact today.
         </p>
       </ScrollMotionEffect>
 
-      <div className='mx-6 md:mx-32 mt-16 '>
-        <ScrollMotionEffect effect='fade-up' duration='2000'>
+      <div className="mx-6 md:mx-32 mt-16 ">
+        <ScrollMotionEffect effect="fade-up" duration="2000">
           <Accordion
             selectedKeys={selectedKeys}
             onSelectionChange={setSelectedKeys}
-            className='border-2 shadow-lg !p-5 !md:p-10 rounded-lg text-2xl py-5 bg-white'
+            className="border-2 shadow-lg !p-5 !md:p-10 rounded-lg text-2xl py-5 bg-white"
             // style={{ border: '1px solid red' }}
           >
             {jobsPostInfo?.map((el, index) => (
               <AccordionItem
                 key={el.id}
-                aria-label='Accordion 1'
+                aria-label="Accordion 1"
                 title={
-                  <div className='text-xl md:text-[24px] font-medium'>
+                  <div className="text-lg md:text-[18px] font-medium">
                     {el.jobTitle}
                   </div>
                 }
-                className='text-[18px] md:text-lg '
+                className="text-[14px] md:text-base "
               >
                 {parse(el.jobDesc)}
               </AccordionItem>

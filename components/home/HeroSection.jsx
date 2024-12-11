@@ -23,7 +23,7 @@ const HeroSection = () => {
 
   return (
     <SectionLayout bg={"bg-transparent"}>
-      <div className="z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row pt-10 pb-10 md:pb-6">
+      <div className="z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row md:pt-10 pb-10 md:pb-6">
         <motion.div
           className="flex-1"
           initial="hidden"
@@ -34,16 +34,28 @@ const HeroSection = () => {
           <ScrollMotionEffect effect="flip-up" duration="1000">
             <h1
               className={cn(
-                "text-2xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
+                "text-3xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
                 fira.className
               )}
             >
-              The <span className="text-[#B396FF]"> Digital </span>Business Card
-              <span className="block text-2xl md:text-3xl py-6">
-                That Pays You to
-                <span className="text-[#B396FF]"> Network </span>
+              Get <span className="text-[#B396FF]"> Paid </span>
+              to
+              <span className="text-[#B396FF] block pt-2 md:pt-5 text-3xl md:text-5xl">
+                Network
               </span>
             </h1>
+            {/* <h1
+              className={cn(
+                "text-xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
+                fira.className
+              )}
+            >
+              The <span className="text-[#B396FF]"> Network </span>that pays
+              <span className=" block pt-2 md:pt-5 ">
+                you to
+                <span className="text-[#B396FF]"> Network</span>
+              </span>
+            </h1> */}
           </ScrollMotionEffect>
           <div className="flex justify-center pt-12">
             <ScrollMotionEffect effect="zoom-in" duration="2000">
