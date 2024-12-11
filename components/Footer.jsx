@@ -42,7 +42,7 @@ const Footer = () => {
               <ul className="w-full text-black font-normal list-none ml-0 flex flex-row flex-wrap items-center justify-center text-center divide-x divide-gray-600">
                 {quickLinks.map((el, index) => (
                   <li
-                    className="mb-4 px-5 md:px-1 lg:px-6 flex items-center text-md xl:text-[18px]"
+                    className="mb-4 px-1 lg:px-4 flex items-center text-md xl:text-[18px]"
                     key={index}
                   >
                     <Link href={el.slug} className="hover:underline">

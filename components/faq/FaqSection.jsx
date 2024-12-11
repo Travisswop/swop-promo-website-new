@@ -124,7 +124,7 @@ const FaqSection = () => {
   return (
     <SectionLayout className="leading-tighter tracking-tight">
       <ScrollMotionEffect effect="fade-up" duration="2000">
-        <div className="bg-[#F3F3F3] flex flex-col md:flex-row items-center justify-center gap-4 p-4 rounded-md mx-auto md:w-[750px] text-sm md:text-lg font-semibold ">
+        <div className="bg-[#F3F3F3] text-center flex flex-col md:flex-row items-center justify-center gap-2 p-2 lg:p-4 tracking-tighter rounded-md mx-auto md:w-fit  text-sm lg:text-base font-semibold ">
           <p>{`Sign up for text and support`}</p>
           <span className="hidden md:block">|</span>
           <p>{`Text ‘SWOP’ to 67839`}</p>
