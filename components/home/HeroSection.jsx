@@ -48,8 +48,9 @@ const HeroSection = () => {
                 src="/assets/home/heroImage.png"
                 alt="heroImage"
                 width={500}
-                height={800}
+                height={500}
                 quality={100}
+                className="w-[500px] h-auto"
               />
             </ScrollMotionEffect>
           </div>
