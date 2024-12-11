@@ -68,8 +68,9 @@ const HeroSection = () => {
                 <Image
                   src="/assets/home/app-store.png"
                   alt="appStore"
-                  width={120}
-                  height={120}
+                  width={520}
+                  height={520}
+                  className="w-[120px] h-auto"
                 />
               </ScrollMotionEffect>
             </Link>
@@ -78,8 +79,9 @@ const HeroSection = () => {
                 <Image
                   src="/assets/home/google-play.png"
                   alt="googlePlay"
-                  width={120}
-                  height={120}
+                  width={520}
+                  height={520}
+                  className="w-[120px] h-auto"
                 />
               </ScrollMotionEffect>
             </Link>
