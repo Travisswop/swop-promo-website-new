@@ -23,7 +23,7 @@ const HeroSection = () => {
 
   return (
     <SectionLayout bg={"bg-transparent"}>
-      <div className="z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row md:pt-10 pb-10 md:pb-6">
+      <div className="z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 pb-10 md:pb-6">
         <motion.div
           className="flex-1"
           initial="hidden"
@@ -68,7 +68,7 @@ const HeroSection = () => {
               />
             </ScrollMotionEffect>
           </div>
-          <div className="flex justify-center gap-4 pt-14">
+          <div className="flex justify-center gap-4 pt-8 md:pt-12">
             <Link href="href">
               <ScrollMotionEffect effect="zoom-in" duration="1000">
                 <Image
