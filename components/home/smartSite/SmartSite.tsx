@@ -8,7 +8,7 @@ const SmartSite = () => {
   return (
     <ScrollMotionEffect
       effect="fade-up"
-      duration="2000"
+      duration="1000"
       className={
         "max-w-[420px] md:w-full h-full m-auto row-span-2 bg-[#F5F5F5] rounded-xl md:col-start-2 md:row-start-1 2xl:row-start-1 2xl:col-start-2"
       }

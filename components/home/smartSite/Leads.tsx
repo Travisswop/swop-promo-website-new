@@ -8,7 +8,7 @@ const Leads = () => {
   return (
     <ScrollMotionEffect
       effect="fade-up"
-      duration="2000"
+      duration="1000"
       className="max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] rounded-2xl p-4 flex flex-col justify-between"
     >
       <div className="relative h-[185px] w-full">

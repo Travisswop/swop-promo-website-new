@@ -8,7 +8,7 @@ const Analytics = () => {
   return (
     <ScrollMotionEffect
       effect="fade-up"
-      duration="2000"
+      duration="1000"
       className={
         "max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] rounded-2xl p-4 flex flex-col justify-between lg:col-start-2 lg:row-start-3 2xl:row-start-1 2xl:col-start-3 "
       }

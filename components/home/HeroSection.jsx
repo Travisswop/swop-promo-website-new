@@ -60,7 +60,7 @@ const HeroSection = () => {
           <div className="flex justify-center pt-12">
             <ScrollMotionEffect effect="zoom-in" duration="2000">
               <Image
-                src="/assets/home/heroImage.svg"
+                src="/assets/home/heroImage.png"
                 alt="heroImage"
                 width={500}
                 height={800}
@@ -76,8 +76,6 @@ const HeroSection = () => {
                   alt="appStore"
                   width={120}
                   height={120}
-                  quality={100}
-                  priority
                 />
               </ScrollMotionEffect>
             </Link>
@@ -88,8 +86,6 @@ const HeroSection = () => {
                   alt="googlePlay"
                   width={120}
                   height={120}
-                  quality={100}
-                  priority
                 />
               </ScrollMotionEffect>
             </Link>
