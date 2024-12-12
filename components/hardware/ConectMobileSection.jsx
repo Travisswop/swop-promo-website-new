@@ -197,7 +197,7 @@ const ConectMobileSection = () => {
   }, [hoverVideoUrl]);
 
   return (
-    <SectionLayout>
+    <div className="container">
       {/* <div className="hidden md:block">
         <ScrollMotionEffect effect="fade-right" duration="2000">
           <h2 className="text-xl font-normal leading-none text-center text-stone-950 md:text-4xl">
@@ -445,7 +445,7 @@ const ConectMobileSection = () => {
           </p>
         </ScrollMotionEffect>
       </div> */}
-    </SectionLayout>
+    </div>
   );
 };
 

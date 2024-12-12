@@ -11,7 +11,7 @@ const LegalSection = () => {
   const [selected, setSelected] = React.useState("photos");
 
   return (
-    <SectionLayout className="leading-tighter tracking-tight">
+    <div className="leading-tighter tracking-tight container">
       <ScrollMotionEffect effect="fade-up" duration="2000">
         <h2
           className={`text-stone-950 font-normal text-xl md:text-3xl text-center !leading-none`}
@@ -75,7 +75,7 @@ const LegalSection = () => {
           </div>
         </ScrollMotionEffect>
       </div>
-    </SectionLayout>
+    </div>
   );
 };
 

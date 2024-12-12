@@ -352,14 +352,14 @@ const JobSection = () => {
   const [selectedKeys, setSelectedKeys] = React.useState(new Set(["1"]));
 
   return (
-    <SectionLayout>
+    <div>
       <ScrollMotionEffect
         effect="fade-up"
         duration="2000"
         className={"tracking-tighter"}
       >
         <h2
-          className={`text-stone-950 font-normal text-xl md:text-3xl text-center !leading-none`}
+          className={`text-stone-950 font-normal text-xl md:text-3xl text-center pt-2`}
         >
           <strong>Jobs</strong>
         </h2>
@@ -395,7 +395,7 @@ const JobSection = () => {
           </Accordion>
         </ScrollMotionEffect>
       </div>
-    </SectionLayout>
+    </div>
   );
 };
 

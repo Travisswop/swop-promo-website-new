@@ -8,7 +8,7 @@ import Smartsite from "@/components/home/Smartsite";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col gap-20 pb-16">
       <HeroSection />
       <Smartsite />
       <InteractiveSection />

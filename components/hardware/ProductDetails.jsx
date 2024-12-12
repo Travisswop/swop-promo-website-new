@@ -44,7 +44,7 @@ const clientComments = [
 
 const ProductDetails = () => {
   return (
-    <SectionLayout>
+    <div>
       <ScrollMotionEffect effect="fade-up" duration="2000">
         <div class="grid grid-col-1 md:grid-rows-2 grid-flow-col gap-4 items-stretch justify-center">
           <div class="row-span-1 bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl w-[500px] h-auto">
@@ -189,7 +189,7 @@ const ProductDetails = () => {
           </ScrollMotionEffect>
         ))}
       </div>
-    </SectionLayout>
+    </div>
   );
 };
 

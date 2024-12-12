@@ -122,7 +122,7 @@ const FaqSection = () => {
     new Set(["0"])
   );
   return (
-    <SectionLayout className="leading-tighter tracking-tight">
+    <div className="leading-tighter tracking-tight">
       <ScrollMotionEffect effect="fade-up" duration="2000">
         <div className="bg-[#F3F3F3] text-center flex flex-col md:flex-row items-center justify-center gap-2 p-2 lg:p-4 tracking-tighter rounded-md mx-auto md:w-fit  text-sm lg:text-base font-semibold ">
           <p>{`Sign up for text and support`}</p>
@@ -161,7 +161,7 @@ const FaqSection = () => {
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration="2000">
-        <div className="mx-0 md:mx-32 mt-8 md:mt-16 bg-white overflow-x-hidden">
+        <div className="mx-0 md:mx-20 mt-8 md:mt-16 bg-white overflow-x-hidden">
           <Accordion
             className="border-2 shadow-lg !p-5 !md:p-10 rounded-lg text-xl py-5 overflow-x-hidden"
             // style={{ border: '1px solid red' }}
@@ -187,7 +187,7 @@ const FaqSection = () => {
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration="2000">
-        <div className="mx-0 md:mx-32 mt-8 md:mt-16 border-2 shadow-lg rounded-lg bg-white">
+        <div className="mx-0 md:mx-20 mt-8 md:mt-16 border-2 shadow-lg rounded-lg bg-white">
           <h1 className="text-2xl font-bold ml-1 !px-5 !md:px-10 mt-6">
             General <span>💎</span>
           </h1>
@@ -216,7 +216,7 @@ const FaqSection = () => {
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration="2000">
-        <div className="mx-0 md:mx-32 mt-8 md:mt-16 border-2 shadow-lg rounded-lg bg-white">
+        <div className="mx-0 md:mx-20 mt-8 md:mt-16 border-2 shadow-lg rounded-lg bg-white">
           <h1 className="text-xl font-bold ml-1 !px-5 !md:px-10 mt-6">
             Compatibility <span>🤝</span>
           </h1>
@@ -245,7 +245,7 @@ const FaqSection = () => {
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration="2000">
-        <div className="mx-0 md:mx-32 mt-8 md:mt-16 border-2 shadow-lg rounded-lg bg-white">
+        <div className="mx-0 md:mx-20 mt-8 md:mt-16 border-2 shadow-lg rounded-lg bg-white">
           <h1 className="text-xl font-bold ml-1 !px-5 !md:px-10 mt-6">
             Shipping <span>🚚</span>
           </h1>
@@ -272,7 +272,7 @@ const FaqSection = () => {
           </Accordion>
         </div>
       </ScrollMotionEffect>
-    </SectionLayout>
+    </div>
   );
 };
 

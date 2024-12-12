@@ -47,101 +47,106 @@ const MainNavbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    document.querySelector("header").classList.add("!px-0");
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [handleScroll]);
 
   return (
-    <Navbar
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
-      maxWidth="2xl"
-      className={`pb-0 pt-2 md:pb-3 md:pt-4 fixed top-0 transition-colors duration-300 ${navbarColor ? "!bg-white shadow-small duration-1000" : "bg-transparent"}`}
+    <div
+      className={`w-full m-auto z-50  fixed top-0  transition-colors duration-300 ${navbarColor ? "!bg-white shadow-small duration-1000" : "bg-transparent"}}`}
     >
-      <NavbarContent>
-        <NavbarBrand>
-          <Link href="/">
-            <Image
-              src="/assets/site-logo/swop-logo.png"
-              alt="Swop Logo"
-              width={150}
-              height={100}
-              className="w-[90px] md:w-[150px] h-auto"
-              quality={100}
-              priority
-            />
-          </Link>
-        </NavbarBrand>
-      </NavbarContent>
-
-      <NavbarContent
-        className="hidden md:flex gap-4 bg-[#F6F6F6] rounded-full py-2 px-6"
-        justify="center"
+      <Navbar
+        isMenuOpen={isMenuOpen}
+        onMenuOpenChange={setIsMenuOpen}
+        maxWidth="full"
+        className={`container pb-0 pt-2 md:pb-3 md:pt-4 transition-colors duration-300 ${navbarColor ? "!bg-white  duration-1000" : "bg-transparent"}`}
       >
-        <NavbarItem>
-          <Link href="/">
-            <Image
-              src="/assets/site-logo/navicon.png"
-              alt="Swop Logo"
-              width={50}
-              height={50}
-              quality={100}
-              priority
-            />
-          </Link>
-        </NavbarItem>
-        {menuItems.map((el) => (
-          <NavbarItem key={el.slug}>
-            <Link
-              href={el.slug}
-              className={`text-md md:text-lg hover:text-[#AF97D4] ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
-            >
-              {el.title}
+        <NavbarContent>
+          <NavbarBrand>
+            <Link href="/">
+              <Image
+                src="/assets/site-logo/swop-logo.png"
+                alt="Swop Logo"
+                width={150}
+                height={100}
+                className="w-[90px] md:w-[150px]"
+                quality={100}
+                priority
+              />
+            </Link>
+          </NavbarBrand>
+        </NavbarContent>
+
+        <NavbarContent
+          className="hidden md:flex gap-2  bg-[#F6F6F6] rounded-full  p-2 lg:p-4 "
+          justify="center"
+        >
+          <NavbarItem>
+            <Link href="/">
+              <Image
+                src="/assets/site-logo/navicon.png"
+                alt="Swop Logo"
+                width={50}
+                height={50}
+                quality={100}
+                priority
+              />
             </Link>
           </NavbarItem>
-        ))}
-      </NavbarContent>
+          {menuItems.map((el) => (
+            <NavbarItem key={el.slug}>
+              <Link
+                href={el.slug}
+                className={`text-sm md:text-base hover:text-[#AF97D4] ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
+              >
+                {el.title}
+              </Link>
+            </NavbarItem>
+          ))}
+        </NavbarContent>
 
-      <NavbarContent justify="end" className="flex items-center">
-        <NavbarItem>
-          <Link
-            href="/get-demo"
-            className="flex items-center gap-x-2 bg-[#F6F6F6] p-1.5 md:p-2 rounded-full text-sm md:text-lg font-semibold group hover:text-[#AF97D4]"
-          >
-            <p className="group-hover:text-[#AF97D4]">Get Demo</p>
-            <div className="bg-[#282828] p-1 md:p-2 rounded-full ">
-              <IoCall className="w-3 h-3 text-white md:w-5 md:h-5 group-hover:text-[#AF97D4]" />
-            </div>
-          </Link>
-        </NavbarItem>
-        <NavbarItem className="">
-          <Link href={"https://desktop-app-psi.vercel.app/"} target="_blank">
-            <div className="bg-[#F6F6F6] p-2 md:p-3 rounded-full">
-              <LuUserRound className="w-4 h-4 md:w-7 md:h-7 text-[#282828] hover:text-[#AF97D4]" />
-            </div>
-          </Link>
-        </NavbarItem>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="md:hidden"
-        />
-      </NavbarContent>
-
-      <NavbarMenu className="overflow-hidden">
-        {menuItems.map((el, index) => (
-          <NavbarMenuItem key={el.slug} className="flex flex-row">
+        <NavbarContent justify="end" className="flex items-center">
+          <NavbarItem>
             <Link
-              className={`w-full text-black text-center !text-xl font-medium py-1 ${pathname === el.slug ? "!text-[#AF97D4]" : ""} ${index === 0 ? "mt-6" : ""}`}
-              href={el.slug}
-              onClick={() => setIsMenuOpen(false)}
+              href="/get-demo"
+              className="flex items-center gap-x-2 bg-[#F6F6F6] p-1.5 md:p-2 rounded-full text-sm md:text-lg font-semibold group hover:text-[#AF97D4]"
             >
-              {el.title}
+              <p className="group-hover:text-[#AF97D4]">Get Demo</p>
+              <div className="bg-[#282828] p-1 md:p-2 rounded-full ">
+                <IoCall className="w-3 h-3 text-white md:w-5 md:h-5 group-hover:text-[#AF97D4]" />
+              </div>
             </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
-    </Navbar>
+          </NavbarItem>
+          <NavbarItem className="">
+            <Link href={"https://desktop-app-psi.vercel.app/"} target="_blank">
+              <div className="bg-[#F6F6F6] p-2 md:p-3 rounded-full">
+                <LuUserRound className="w-4 h-4 md:w-7 md:h-7 text-[#282828] hover:text-[#AF97D4]" />
+              </div>
+            </Link>
+          </NavbarItem>
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            className="md:hidden"
+          />
+        </NavbarContent>
+
+        <NavbarMenu className="overflow-hidden">
+          {menuItems.map((el, index) => (
+            <NavbarMenuItem key={el.slug} className="flex flex-row">
+              <Link
+                className={`w-full text-black text-center !text-xl font-medium py-1 ${pathname === el.slug ? "!text-[#AF97D4]" : ""} ${index === 0 ? "mt-6" : ""}`}
+                href={el.slug}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {el.title}
+              </Link>
+            </NavbarMenuItem>
+          ))}
+        </NavbarMenu>
+      </Navbar>
+    </div>
   );
 };
 

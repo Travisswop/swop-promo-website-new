@@ -57,7 +57,7 @@ experiences with just a tap.`,
 
 const DevicesInteraction = () => {
   return (
-    <SectionLayout className="relative">
+    <div className="relative container">
       <ScrollMotionEffect effect="fade-up" duration="2000">
         <h2
           className={`text-stone-950 font-medium text-3xl md:text-4xl lg:text-5xl text-center !leading-none py-5`}
@@ -154,7 +154,7 @@ const DevicesInteraction = () => {
         </div>
       </ScrollMotionEffect>
 
-      <div className="mt-8 2xl:px-20">
+      <div className="mt-8 px-2 2xl:px-20">
         <ProductCards productList={productInfo} />
       </div>
 
@@ -181,7 +181,7 @@ const DevicesInteraction = () => {
           </div>
         ))}
       </div> */}
-    </SectionLayout>
+    </div>
   );
 };
 

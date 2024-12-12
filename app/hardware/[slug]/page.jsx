@@ -1,8 +1,8 @@
-import ProductDetails from '@/components/hardware/ProductDetails';
+import ProductDetails from "@/components/hardware/ProductDetails";
 
 const page = () => {
   return (
-    <div>
+    <div className="container">
       <ProductDetails />
     </div>
   );

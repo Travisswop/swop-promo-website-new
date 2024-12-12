@@ -1,8 +1,8 @@
-import ContactSection from '@/components/contact-us/ContactSection';
+import ContactSection from "@/components/contact-us/ContactSection";
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-hidden container pb-16">
       <ContactSection />
     </div>
   );

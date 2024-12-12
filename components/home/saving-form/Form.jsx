@@ -11,7 +11,7 @@ const Form = () => {
   const [avgCost, setAvgCost] = useState("0");
   const [open, setOpen] = useState(false);
   return (
-    <SectionLayout>
+    <div className="container">
       <div className="relative">
         <div className="absolute left-[-155%] md:left-[-80%] lg:left-[-70%] xl:left-[-55%] top-[-100px] md:top-[-200px] bottom-0 w-full gradient-circle-top h-[500px] md:h-[1000px] -z-10 " />
         <ScrollMotionEffect effect="zoom-in" duration="2000">
@@ -93,7 +93,7 @@ const Form = () => {
           </form>
         </ScrollMotionEffect>
       </div>
-    </SectionLayout>
+    </div>
   );
 };
 

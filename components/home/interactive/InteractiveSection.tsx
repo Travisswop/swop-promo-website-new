@@ -6,7 +6,7 @@ import React from "react";
 
 const InteractiveSection = () => {
   return (
-    <SectionLayout>
+    <div className="container ">
       <div className="relative">
         <div className="absolute left-[-155%] md:left-[-80%] lg:left-[-70%] xl:left-[-55%] top-[-100px] md:top-[-200px] bottom-0 w-full gradient-circle-top h-[500px] md:h-[1000px] -z-10 " />
         <h2
@@ -64,7 +64,7 @@ const InteractiveSection = () => {
           </div>
         </div>
       </div>
-    </SectionLayout>
+    </div>
   );
 };
 

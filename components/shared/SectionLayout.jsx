@@ -10,11 +10,7 @@ const SectionLayout = React.memo(({ children, img, bg, className }) => {
         "mx-auto flex justify-center items-center w-full"
       )}
     >
-      <div
-        className={
-          "container py-[1.5rem] md:py-[3.5rem] px-5 xl:px-0" + className
-        }
-      >
+      <div className={" py-[1.5rem] md:py-[3.5rem] px-5 xl:px-0" + className}>
         {children}
       </div>
     </section>

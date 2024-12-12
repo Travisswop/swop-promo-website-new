@@ -74,7 +74,7 @@ const linkInfo = [
 
 const FoundersSection = () => {
   return (
-    <SectionLayout>
+    <div>
       <ScrollMotionEffect effect="fade-right" duration="2000">
         <h2
           className={`text-stone-950 font-semibold text-3xl md:text-5xl text-center !leading-normal`}
@@ -111,7 +111,7 @@ const FoundersSection = () => {
           </ScrollMotionEffect>
         ))}
       </div>
-    </SectionLayout>
+    </div>
   );
 };
 

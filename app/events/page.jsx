@@ -2,7 +2,7 @@ import EventsSections from "@/components/events/EventsSections";
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-hidden container">
       <EventsSections />
     </div>
   );

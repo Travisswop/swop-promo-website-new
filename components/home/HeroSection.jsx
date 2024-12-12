@@ -13,23 +13,22 @@ const fira = Fira_Code({
 });
 const HeroSection = () => {
   return (
-    <SectionLayout bg={"bg-transparent"}>
-      <div className="z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
-        <div>
-          <ScrollMotionEffect effect="flip-up" duration="2000">
-            <h1
-              className={cn(
-                "text-4xl md:text-[54px] font-bold text-black text-center leading-tight tracking-normal pt-5 md:pt-0 [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
-                fira.className
-              )}
-            >
-              Get <span className="text-[#B396FF]"> Paid </span>
-              to
-              <span className="text-[#B396FF] block pt-2 md:pt-5 text-3xl md:text-5xl">
-                Network
-              </span>
-            </h1>
-            {/* <h1
+    <div className="container z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
+      <div>
+        <ScrollMotionEffect effect="flip-up" duration="2000">
+          <h1
+            className={cn(
+              "text-4xl md:text-[54px] font-bold text-black text-center leading-tight tracking-normal pt-5 md:pt-0 [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
+              fira.className
+            )}
+          >
+            Get <span className="text-[#B396FF]"> Paid </span>
+            to
+            <span className="text-[#B396FF] block pt-2 md:pt-5 text-3xl md:text-5xl">
+              Network
+            </span>
+          </h1>
+          {/* <h1
               className={cn(
                 "text-xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
                 fira.className
@@ -41,46 +40,45 @@ const HeroSection = () => {
                 <span className="text-[#B396FF]"> Network</span>
               </span>
             </h1> */}
+        </ScrollMotionEffect>
+        <div className="flex justify-center pt-12">
+          <ScrollMotionEffect effect="zoom-in" duration="2000">
+            <Image
+              src="/assets/home/heroImage.png"
+              alt="heroImage"
+              width={500}
+              height={500}
+              quality={100}
+              className="w-[500px] h-auto"
+            />
           </ScrollMotionEffect>
-          <div className="flex justify-center pt-12">
+        </div>
+        <div className="flex justify-center gap-4 pt-8 md:pt-12">
+          <Link href="href">
             <ScrollMotionEffect effect="zoom-in" duration="2000">
               <Image
-                src="/assets/home/heroImage.png"
-                alt="heroImage"
-                width={500}
-                height={500}
-                quality={100}
-                className="w-[500px] h-auto"
+                src="/assets/home/app-store.png"
+                alt="appStore"
+                width={520}
+                height={520}
+                className="w-[120px] h-auto"
               />
             </ScrollMotionEffect>
-          </div>
-          <div className="flex justify-center gap-4 pt-8 md:pt-12">
-            <Link href="href">
-              <ScrollMotionEffect effect="zoom-in" duration="2000">
-                <Image
-                  src="/assets/home/app-store.png"
-                  alt="appStore"
-                  width={520}
-                  height={520}
-                  className="w-[120px] h-auto"
-                />
-              </ScrollMotionEffect>
-            </Link>
-            <Link href="href">
-              <ScrollMotionEffect effect="zoom-in" duration="2000">
-                <Image
-                  src="/assets/home/google-play.png"
-                  alt="googlePlay"
-                  width={520}
-                  height={520}
-                  className="w-[120px] h-auto"
-                />
-              </ScrollMotionEffect>
-            </Link>
-          </div>
+          </Link>
+          <Link href="href">
+            <ScrollMotionEffect effect="zoom-in" duration="2000">
+              <Image
+                src="/assets/home/google-play.png"
+                alt="googlePlay"
+                width={520}
+                height={520}
+                className="w-[120px] h-auto"
+              />
+            </ScrollMotionEffect>
+          </Link>
         </div>
       </div>
-    </SectionLayout>
+    </div>
 
     // <SectionLayout bg={"bg-transparent"}>
     //   <div className="z-50 flex flex-col-reverse items-center w-full gap-6 md:flex-row">

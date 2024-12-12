@@ -1,8 +1,8 @@
-import LegalSection from '@/components/legal/LegalSection';
+import LegalSection from "@/components/legal/LegalSection";
 
 const page = () => {
   return (
-    <div>
+    <div className="container mx-auto  pb-16">
       <LegalSection />
     </div>
   );

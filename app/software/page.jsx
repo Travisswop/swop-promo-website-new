@@ -1,8 +1,8 @@
-import ConectMobileSection from '@/components/software/ConectMobileSection';
+import ConectMobileSection from "@/components/software/ConectMobileSection";
 
 const page = () => {
   return (
-    <div>
+    <div className="container pt-5 pb-16">
       <ConectMobileSection />
     </div>
   );
