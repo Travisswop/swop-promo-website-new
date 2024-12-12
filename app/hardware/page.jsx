@@ -9,7 +9,9 @@ const page = () => {
       {/* <div className="container"> */}
       <DevicesInteraction />
       {/* </div> */}
-      <HardwareCollections />
+      <div className="container">
+        <HardwareCollections />
+      </div>
     </div>
   );
 };

@@ -80,7 +80,7 @@ const MainNavbar = () => {
         </NavbarContent>
 
         <NavbarContent
-          className="hidden md:flex gap-2  bg-[#F6F6F6] rounded-full  p-2 lg:p-4 "
+          className="hidden md:flex gap-2 lg:gap-4  bg-[#F6F6F6] rounded-full  p-2 lg:p-4 "
           justify="center"
         >
           <NavbarItem>
@@ -111,7 +111,7 @@ const MainNavbar = () => {
           <NavbarItem>
             <Link
               href="/get-demo"
-              className="flex items-center gap-x-2 bg-[#F6F6F6] p-1.5 md:p-2 rounded-full text-sm md:text-lg font-semibold group hover:text-[#AF97D4]"
+              className="flex items-center gap-x-2 bg-[#F6F6F6] p-1.5 md:p-2 rounded-full text-sm md:text-base font-semibold group hover:text-[#AF97D4]"
             >
               <p className="group-hover:text-[#AF97D4]">Get Demo</p>
               <div className="bg-[#282828] p-1 md:p-2 rounded-full ">
