@@ -8,7 +8,7 @@ const Team = () => {
       effect="fade-up"
       duration="2000"
       className={
-        "max-w-[330px] h-[444px] lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 flex flex-col justify-between items-center overflow-hidden"
+        " max-w-[330px] h-[444px] lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 flex flex-col justify-between items-center overflow-hidden "
       }
     >
       {/* <Image
@@ -40,11 +40,14 @@ const Team = () => {
           Manage The Entire Team
         </h3>
       </div>
-      <div>
-        <h4 className="text-base text-center text-gray-400">
+      <div className="max-w-full flex-grow">
+        <h4 className="text-lg text-center text-gray-400 max-w-full flex-grow">
           Tag¹ facilitates an instant and connection. Activate immersive brand
           experiences with just a tap.
         </h4>
+        <h5 className="bg-clip-text bg-transparent text-transparent ">
+          ......................................................................................................................................................................................................................................................................................................
+        </h5>
       </div>
     </ScrollMotionEffect>
   );

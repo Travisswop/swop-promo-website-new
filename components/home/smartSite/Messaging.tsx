@@ -20,7 +20,7 @@ const Messaging = () => {
           width={500}
           height={500}
           quality={100}
-          className="m-auto absolute top-10 lg:top-16 2xl:top-10 left-0 right-0 bottom-0  scale-110"
+          className="m-auto absolute top-10 lg:top-16 2xl:top-16 left-0 right-0 bottom-0  scale-110"
         />
 
         {/* <Image

@@ -13,7 +13,7 @@ import Leads from "./smartSite/Leads";
 const Smartsite = () => {
   return (
     <div className="container">
-      <div className="grid grid-cols-1 auto-rows-min  md:grid-cols-2 2xl:grid-cols-3 gap-4 xl:gap-5 h-full items-stretch self-stretch  mt-10 md:mt-6">
+      <div className="grid grid-cols-1 auto-rows-min  md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-5 h-full items-stretch self-stretch  mt-10 md:mt-6">
         <Messaging />
         <SmartSite />
         <Analytics />

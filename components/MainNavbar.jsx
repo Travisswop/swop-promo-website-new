@@ -80,31 +80,36 @@ const MainNavbar = () => {
         </NavbarContent>
 
         <NavbarContent
-          className="hidden md:flex gap-2 lg:gap-4  bg-[#F6F6F6] rounded-full  p-2 lg:p-4 "
+          className=" hidden md:flex gap-2 lg:gap-4 text-gray-300   rounded-full  "
           justify="center"
         >
-          <NavbarItem>
-            <Link href="/">
-              <Image
-                src="/assets/site-logo/navicon.png"
-                alt="Swop Logo"
-                width={50}
-                height={50}
-                quality={100}
-                priority
-              />
-            </Link>
-          </NavbarItem>
-          {menuItems.map((el) => (
-            <NavbarItem key={el.slug}>
-              <Link
-                href={el.slug}
-                className={`text-sm md:text-base hover:text-[#AF97D4] ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
-              >
-                {el.title}
-              </Link>
+          <div className="bounce-nav hidden md:flex justify-center items-center gap-2 lg:gap-4 text-gray-300  bg-[#191919] rounded-full p-2 h-14 ">
+            <NavbarItem>
+              <div className="bg-white rounded-full">
+                <Link href="/">
+                  <Image
+                    src="/assets/site-logo/navicon.png"
+                    alt="Swop Logo"
+                    width={40}
+                    height={40}
+                    quality={100}
+                    priority
+                    className=" rounded-full animate-slow-bounce"
+                  />
+                </Link>
+              </div>
             </NavbarItem>
-          ))}
+            {menuItems.map((el) => (
+              <NavbarItem key={el.slug}>
+                <Link
+                  href={el.slug}
+                  className={`text-sm md:text-base hover:text-[#AF97D4] ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
+                >
+                  {el.title}
+                </Link>
+              </NavbarItem>
+            ))}
+          </div>
         </NavbarContent>
 
         <NavbarContent justify="end" className="flex items-center">

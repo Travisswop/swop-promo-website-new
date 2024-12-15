@@ -6,41 +6,35 @@ import { Fira_Code } from "next/font/google";
 import { cn } from "@nextui-org/react";
 import Image from "next/image";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
+import { delay, motion, px } from "framer-motion";
 
 const fira = Fira_Code({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
+
 const HeroSection = () => {
+  const variants = {
+    hidden: { opacity: 0, y: 50, blur: 10 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      blur: 0,
+      transition: { duration: 0.5, delay: i * 0.03 },
+    }),
+  };
+
+  const text1 = "Get Paid to Network".split("");
+  // const text2 = "   Paid ".split("");
+  // const text3 = "        to".split("");
+  // const text4 = "Network".split("");
+  // const text5 = "Get paid to".split("");
+
+  // const text6 = "network".split("");
+
   return (
     <div className="container z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
       <div>
-        <ScrollMotionEffect effect="flip-up" duration="2000">
-          <h1
-            className={cn(
-              "text-4xl md:text-[54px] font-bold text-black text-center leading-tight tracking-normal pt-5 md:pt-0 [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
-              fira.className
-            )}
-          >
-            Get <span className="text-[#B396FF]"> Paid </span>
-            to
-            <span className="text-[#B396FF] block pt-2 md:pt-5 text-3xl md:text-5xl">
-              Network
-            </span>
-          </h1>
-          {/* <h1
-              className={cn(
-                "text-xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
-                fira.className
-              )}
-            >
-              The <span className="text-[#B396FF]"> Network </span>that pays
-              <span className=" block pt-2 md:pt-5 ">
-                you to
-                <span className="text-[#B396FF]"> Network</span>
-              </span>
-            </h1> */}
-        </ScrollMotionEffect>
         <div className="flex justify-center pt-12">
           <ScrollMotionEffect effect="zoom-in" duration="2000">
             <Image
@@ -53,9 +47,69 @@ const HeroSection = () => {
             />
           </ScrollMotionEffect>
         </div>
-        <div className="flex justify-center gap-4 pt-8 md:pt-12">
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          // variants={variants}
+          className={cn(
+            "text-4xl md:text-[54px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 md:pt-10  [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)] relative"
+          )}
+        >
+          {text1.map((word, index) => (
+            <motion.div
+              variants={variants}
+              custom={index}
+              key={index}
+              className="text-[#333131] inline-block"
+            >
+              {word}
+            </motion.div>
+          ))}
+
+          {/* {text2.map((word, index) => (
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, delay: index / 12 }}
+              key={index}
+              className="text-[#B396FF]"
+            >
+              {word}
+            </motion.span>
+          ))}
+          {text3.map((word, index) => (
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, delay: index / 12 }}
+              key={index}
+            >
+              {word}
+            </motion.span>
+          ))}
+          <br />
+          {text4.map((word, index) => (
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, delay: index / 12 }}
+              key={index}
+              className="text-[#B396FF] text-3xl md:text-5xl leading-10"
+            >
+              {word}
+            </motion.span>
+          ))} */}
+        </motion.div>
+        <h4 className="text-gray-400 text-center text-xl py-8 max-w-[780px]">
+          Turn your connections into earnings with Swop—leverage networking to
+          unlock rewards, generate leads, and build meaningful relationships
+          seamlessly.
+        </h4>
+
+        <div className="flex justify-center gap-4">
           <Link href="href">
-            <ScrollMotionEffect effect="zoom-in" duration="2000">
+            <ScrollMotionEffect effect="fade-up" duration="1000">
               <Image
                 src="/assets/home/app-store.png"
                 alt="appStore"
@@ -66,7 +120,7 @@ const HeroSection = () => {
             </ScrollMotionEffect>
           </Link>
           <Link href="href">
-            <ScrollMotionEffect effect="zoom-in" duration="2000">
+            <ScrollMotionEffect effect="fade-up" duration="1000">
               <Image
                 src="/assets/home/google-play.png"
                 alt="googlePlay"

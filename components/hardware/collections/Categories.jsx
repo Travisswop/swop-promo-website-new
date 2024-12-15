@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { Poppins } from "next/font/google";
+import ScrollMotionEffect from "@/components/motion/ScrollMotionEffect";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -16,12 +17,16 @@ const Categories = ({ title, titleImage, products }) => {
     <div className=" h-full mx-auto flex justify-center items-center w-full px-2">
       <div
         className={cn(
-          "h-full w-full gradient-circle-top -z-50 !py-5 overflow-hidden",
+          "h-full w-full gradient-circle-top -z-50 !py-5 ",
           poppins.className
         )}
       >
-        <section className=" grid grid-cols-1 gap-10 py-0 overflow-hidden rounded-2xl ">
-          <div className="w-full h-[545px] flex flex-col lg:flex-row gap-5 lg:gap-36 xl:gap-60 justify-start  lg:justify-center items-center relative rounded-2xl">
+        <section className=" grid grid-cols-1 gap-10 py-0  rounded-2xl ">
+          <ScrollMotionEffect
+            effect="fade-up"
+            duration="2000"
+            className="w-full h-[545px] flex flex-col lg:flex-row gap-5 lg:gap-36 xl:gap-60 justify-start  lg:justify-center items-center relative rounded-2xl"
+          >
             <Image
               src="/assets/hardware/collection/blackBg.svg"
               alt={title}
@@ -75,8 +80,13 @@ const Categories = ({ title, titleImage, products }) => {
                 Available Now
               </h2>
             </div>
-          </div>
-          <div className=" px-5 flex flex-row flex-wrap gap-10 lg:gap-16  justify-center items-center gradient-circle-top -z-50">
+          </ScrollMotionEffect>
+          <ScrollMotionEffect
+            effect="fade-up"
+            duration="2000"
+            delay="100"
+            className=" px-5 flex flex-row flex-wrap gap-10   justify-center items-center gradient-circle-top -z-50"
+          >
             {products.map((el) => {
               return (
                 <div
@@ -108,7 +118,7 @@ const Categories = ({ title, titleImage, products }) => {
                 </div>
               );
             })}
-          </div>
+          </ScrollMotionEffect>
         </section>
       </div>
     </div>

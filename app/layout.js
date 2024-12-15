@@ -1,5 +1,5 @@
 import { Baloo_2 } from "next/font/google";
-import { Fira_Code } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/react";
@@ -8,7 +8,7 @@ import MainNavbar from "@/components/MainNavbar";
 import Footer from "@/components/Footer";
 
 const baloo = Baloo_2({ subsets: ["latin"] });
-const fira = Fira_Code({
+const fira = Figtree({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });

@@ -154,7 +154,7 @@ const DevicesInteraction = () => {
         </div>
       </ScrollMotionEffect>
 
-      <div className="mt-8 px-2 2xl:px-20">
+      <div className="mt-8 px-2  m-auto">
         <ProductCards productList={productInfo} />
       </div>
 
