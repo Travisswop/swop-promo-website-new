@@ -5,6 +5,7 @@ import { cn } from "@nextui-org/react";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { delay, motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 const InteractiveSection = () => {
   const variants = {
@@ -31,29 +32,45 @@ const InteractiveSection = () => {
           Welcome to the
           <span className="block">
             {text.map((word, index) => (
-              <ScrollMotionEffect
-                effect="fade-up"
-                duration={(500 + index * 50).toString()}
+              <motion.div
                 key={index}
+                initial={{ filter: "blur(50px)" }}
+                viewport={{ once: true }}
+                // whileInView={{ filter: "blur(10px)" }}
+                animate={{
+                  filter: "blur(0px)",
+                  transition: { duration: 1 },
+                }}
                 className={cn(
                   "inline-block text-3xl md:text-6xl text-center font-black  text-[#B3B3B3]"
                 )}
               >
-                <motion.div
+                <ScrollMotionEffect
+                  effect="fade-up"
+                  duration={(500 + index * 50).toString()}
                   key={index}
-                  initial={{ filter: "blur(10px)" }}
-                  animate={{
-                    filter: "blur(0px)",
-                    transition: { duration: 1, ease: "easeInOut" },
-                    delay: 0.5,
-                  }}
+                  // className={cn(
+                  //   "inline-block text-3xl md:text-6xl text-center font-black  text-[#B3B3B3]"
+                  // )}
                 >
                   {word}
-                </motion.div>
-              </ScrollMotionEffect>
+                </ScrollMotionEffect>
+              </motion.div>
             ))}
           </span>
         </h2>
+        <h4 className="max-w-[800px] text-gray-400 text-center mx-auto text-xl pt-6">
+          Turn your connections into earnings with Swop—leverage networking to
+          unlock rewards, generate leads, and build meaningful relationships
+          seamlessly.
+        </h4>
+        <div className=" text-sm text-center m-auto py-8 ">
+          <Link href="#">
+            <button className="bg-black text-white rounded-3xl py-3 px-6">
+              View Whitepaper
+            </button>
+          </Link>
+        </div>
         {/* <ScrollMotionEffect effect="fade-up" duration="2000">
           <motion.div
             ref={ref}

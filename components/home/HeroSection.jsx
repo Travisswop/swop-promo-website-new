@@ -43,23 +43,32 @@ const HeroSection = () => {
           </ScrollMotionEffect>
         </div>
 
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          // variants={variants}
+        <div
           className={cn(
-            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-8  [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)] relative"
+            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-8   relative"
           )}
         >
           {text1.map((word, index) => (
-            <motion.div
-              variants={variants}
-              custom={index}
+            <ScrollMotionEffect
+              effect="fade-up"
+              duration={(200 + index * 50).toString()}
               key={index}
-              className="text-[#333131] inline-block"
+              className={cn(
+                "inline-block text-3xl md:text-6xl text-center font-black  text-[#B3B3B3]"
+              )}
             >
-              {word}
-            </motion.div>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 0.5 },
+                }}
+                className="text-[#333131] inline-block"
+              >
+                {word}
+              </motion.div>
+            </ScrollMotionEffect>
           ))}
 
           {/* {text2.map((word, index) => (
@@ -95,7 +104,7 @@ const HeroSection = () => {
               {word}
             </motion.span>
           ))} */}
-        </motion.div>
+        </div>
         <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-8 max-w-[780px]">
           Turn your connections into earnings with Swop—leverage networking to
           unlock rewards, generate leads, and build meaningful relationships
