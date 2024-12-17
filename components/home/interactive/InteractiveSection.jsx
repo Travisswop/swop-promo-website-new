@@ -42,16 +42,14 @@ const InteractiveSection = () => {
                   transition: { duration: 1 },
                 }}
                 className={cn(
-                  "inline-block text-3xl md:text-6xl text-center font-black  text-[#B3B3B3]"
+                  "inline-block text-3xl md:text-6xl text-center  text-[#B3B3B3]"
                 )}
               >
                 <ScrollMotionEffect
                   effect="fade-up"
                   duration={(500 + index * 50).toString()}
                   key={index}
-                  // className={cn(
-                  //   "inline-block text-3xl md:text-6xl text-center font-black  text-[#B3B3B3]"
-                  // )}
+                  className={cn("font-black")}
                 >
                   {word}
                 </ScrollMotionEffect>
@@ -116,7 +114,7 @@ const InteractiveSection = () => {
           effect="zoom-in"
           duration="2000"
           delay={"500"}
-          className="absolute z-50 top-[35%] right-[15%] md:top-[25%] md:right-[22%] xl:top-[30%] xl:right-[30%] animate-bounce"
+          className="absolute z-50 top-[55%] right-[15%] md:top-[55%] md:right-[22%] xl:top-[60%] xl:right-[30%] animate-bounce"
         >
           <Image
             src="/assets/star.svg"
@@ -131,7 +129,7 @@ const InteractiveSection = () => {
           effect="zoom-in"
           duration="2000"
           delay={"100"}
-          className="absolute z-50 top-[80%] left-[10%] md:top-[80%] md:left-[20%] xl:top-[80%] xl:left-[30%] animate-bounce"
+          className="absolute z-50 top-[90%] left-[10%] md:top-[80%] md:left-[20%] xl:top-[90%] xl:left-[30%] animate-bounce"
         >
           <Image
             src="/assets/star.svg"
@@ -141,7 +139,7 @@ const InteractiveSection = () => {
             className=""
           />
         </ScrollMotionEffect>
-        <div className="flex justify-center flex-1 relative -translate-x-6 md:-translate-x-10 xl:w-2/4 text-center m-auto h-[481px] pt-10">
+        <div className="flex justify-center flex-1 relative -translate-x-6 md:-translate-x-10 xl:w-2/4 text-center m-auto">
           <div className="w-[70%] m-auto">
             <video
               autoPlay
