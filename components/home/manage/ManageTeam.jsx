@@ -1,3 +1,4 @@
+"use client";
 import SectionLayout from "@/components/shared/SectionLayout";
 import React from "react";
 import Team from "./Team";

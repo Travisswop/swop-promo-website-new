@@ -14,7 +14,7 @@ const Form = () => {
     <div className="container">
       <div className="relative">
         <div className="absolute left-[-155%] md:left-[-80%] lg:left-[-70%] xl:left-[-55%] top-[-100px] md:top-[-200px] bottom-0 w-full gradient-circle-top h-[500px] md:h-[1000px] -z-10 " />
-        <ScrollMotionEffect effect="zoom-in-up" duration="500">
+        <ScrollMotionEffect effect="zoom-in-up" duration="1000" delay={"500"}>
           <form className="max-w-[900px] mx-auto bg-[#FAFAFA] py-10 grid grid-cols-1 auto-rows-min items-center justify-center  gap-3  rounded-2xl p-10 w-full">
             <h2 className="text-2xl font-semibold md:text-3xl m-auto text-center mb-5 w-52">
               Savings Calculator

@@ -7,6 +7,7 @@ const Dynamic = () => {
     <ScrollMotionEffect
       effect="fade-left"
       duration="500"
+      delay={"200"}
       className={
         "max-w-[330px] h-[444px] lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
       }

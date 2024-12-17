@@ -32,28 +32,29 @@ const InteractiveSection = () => {
           Welcome to the
           <span className="block">
             {text.map((word, index) => (
-              <motion.div
+              <ScrollMotionEffect
+                effect="fade-up"
+                duration={(500 + index * 50).toString()}
+                delay={"100"}
                 key={index}
-                initial={{ filter: "blur(50px)" }}
-                viewport={{ once: true }}
-                // whileInView={{ filter: "blur(10px)" }}
-                animate={{
-                  filter: "blur(0px)",
-                  transition: { duration: 1 },
-                }}
-                className={cn(
-                  "inline-block text-3xl md:text-6xl text-center  text-[#B3B3B3]"
-                )}
+                className={cn("font-extrabold inline-block")}
               >
-                <ScrollMotionEffect
-                  effect="fade-up"
-                  duration={(500 + index * 50).toString()}
+                <motion.div
                   key={index}
-                  className={cn("font-black")}
+                  initial={{ filter: "blur(50px)" }}
+                  viewport={{ once: true }}
+                  // whileInView={{ filter: "blur(10px)" }}
+                  animate={{
+                    filter: "blur(0px)",
+                    transition: { duration: 1 },
+                  }}
+                  className={cn(
+                    " text-3xl md:text-6xl text-center  text-[#B3B3B3]"
+                  )}
                 >
                   {word}
-                </ScrollMotionEffect>
-              </motion.div>
+                </motion.div>
+              </ScrollMotionEffect>
             ))}
           </span>
         </h2>
