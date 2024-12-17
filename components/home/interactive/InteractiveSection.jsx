@@ -26,7 +26,7 @@ const InteractiveSection = () => {
         <div className="absolute left-[-155%] md:left-[-80%] lg:left-[-70%] xl:left-[-55%] top-[-100px] md:top-[-200px] bottom-0 w-full gradient-circle-top h-[500px] md:h-[1000px] -z-10 " />
         <h2
           className={cn(
-            "text-3xl md:text-6xl font-bold text-black text-center leading-tight tracking-normal "
+            "text-3xl md:text-6xl font-semibold text-black text-center leading-tight tracking-normal "
           )}
         >
           Welcome to the
@@ -62,13 +62,17 @@ const InteractiveSection = () => {
           unlock rewards, generate leads, and build meaningful relationships
           seamlessly.
         </h4>
-        <div className=" text-sm text-center m-auto py-8 ">
+        <ScrollMotionEffect
+          effect="zoom-in-up"
+          duration="500"
+          className=" text-sm text-center m-auto py-8 "
+        >
           <Link href="#">
             <button className="bg-black text-white rounded-3xl py-3 px-6">
               View Whitepaper
             </button>
           </Link>
-        </div>
+        </ScrollMotionEffect>
         {/* <ScrollMotionEffect effect="fade-up" duration="2000">
           <motion.div
             ref={ref}
@@ -114,7 +118,7 @@ const InteractiveSection = () => {
           effect="zoom-in"
           duration="2000"
           delay={"500"}
-          className="absolute z-50 top-[55%] right-[15%] md:top-[55%] md:right-[22%] xl:top-[60%] xl:right-[30%] animate-bounce"
+          className="absolute z-50 top-[55%] right-[15%] md:top-[55%] md:right-[22%] xl:top-[50%] xl:right-[30%] animate-bounce"
         >
           <Image
             src="/assets/star.svg"

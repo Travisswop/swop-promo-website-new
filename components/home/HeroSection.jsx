@@ -27,7 +27,7 @@ const HeroSection = () => {
   const text1 = "Get Paid to Network".split("");
 
   return (
-    <div className="container z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
+    <div className="container z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-8 ">
       <div>
         <div className="flex justify-center xs:pt-4 ms:pt-6 lg:pt-16  ">
           <ScrollMotionEffect effect="zoom-in" duration="2000">
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
         <div
           className={cn(
-            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-8   relative"
+            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-6   relative"
           )}
         >
           {text1.map((word, index) => (
@@ -105,7 +105,7 @@ const HeroSection = () => {
             </motion.span>
           ))} */}
         </div>
-        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-8 max-w-[780px]">
+        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-6 max-w-[780px]">
           Turn your connections into earnings with Swop—leverage networking to
           unlock rewards, generate leads, and build meaningful relationships
           seamlessly.

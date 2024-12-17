@@ -8,9 +8,13 @@ const ProductCards = ({ productList }) => {
   return (
     <div className="gap-6 grid auto-rows-max grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {productList?.map((el, index) => (
-        <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
+        <ScrollMotionEffect effect="fade-up" duration="800" key={index}>
           <Link href={`hardware/${el?.slug}`}>
-            <Card shadow="sm" isPressable className="bg-[#F5F5F5] h-full">
+            <Card
+              shadow="sm"
+              isPressable
+              className="bg-[#F5F5F5] h-full border border-gray-200"
+            >
               <CardBody className="overflow-visible p-4 items-center justify-center">
                 {/* <div className="bg-[#E5E5E5] w-[16%] flex justify-center mx-auto  mt-4 rounded-full">
                   <p className="text-md text-stone-950 text-center max-w-[600px] mx-auto p-1">

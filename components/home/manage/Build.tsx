@@ -6,7 +6,7 @@ const Build = () => {
   return (
     <ScrollMotionEffect
       effect="fade-up"
-      duration="2000"
+      duration="1000"
       className={
         "max-w-[330px] h-full md:col-span-2 lg:col-span-1 lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
       }

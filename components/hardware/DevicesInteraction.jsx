@@ -58,7 +58,10 @@ experiences with just a tap.`,
 const DevicesInteraction = () => {
   return (
     <div className="relative container">
-      <ScrollMotionEffect effect="fade-up" duration="2000">
+      <div
+      // effect="fade-up"
+      // duration="2000"
+      >
         <h2
           className={`text-stone-950 font-medium text-3xl md:text-4xl lg:text-5xl text-center !leading-none py-5`}
         >
@@ -67,8 +70,8 @@ const DevicesInteraction = () => {
         <ScrollMotionEffect
           effect="zoom-in"
           duration="2000"
-          delay={"1000"}
-          className="absolute top-[-20%] left-[-2%]  md:top-0 md:left-[15%]  lg:left-[25%] animate-bounce -z-10"
+          delay={"500"}
+          className="absolute top-[0%] left-[2%]  md:top-0 md:left-[15%]  lg:left-[25%] animate-bounce -z-10"
         >
           <Image
             src="/assets/star.svg"
@@ -82,7 +85,7 @@ const DevicesInteraction = () => {
           effect="zoom-in"
           duration="2000"
           delay={"500"}
-          className="absolute bottom-[-200%] left-[-3%] md:bottom-[-120%] md:left-[5%] lg:left-[12%]  xl:left-[17%] animate-bounce"
+          className="absolute top-[8%] left-[7%] md:top-[15%] md:left-[5%] lg:left-[12%]  xl:left-[17%] animate-bounce"
         >
           <Image
             src="/assets/star.svg"
@@ -96,7 +99,7 @@ const DevicesInteraction = () => {
           effect="zoom-in"
           duration="2000"
           delay={"1000"}
-          className="absolute -top-5 right-[0%] md:top-0 md:right-[20%]  animate-bounce"
+          className="absolute top-[-1%] right-[0%] md:top-0 md:right-[20%]  animate-bounce"
         >
           <Image
             src="/assets/star.svg"
@@ -110,7 +113,7 @@ const DevicesInteraction = () => {
           effect="zoom-in"
           duration="2000"
           delay={"500"}
-          className="absolute top-[90%] right-[20%] md:top-[80%] md:right-[28%] lg:top-[70%] lg:right-[30%] xl:right-[38%] animate-bounce"
+          className="absolute top-[3%] right-[20%] md:top-[6%] md:right-[28%] lg:top-[10%] lg:right-[30%] xl:right-[38%] animate-bounce"
         >
           <Image
             src="/assets/star.svg"
@@ -124,7 +127,7 @@ const DevicesInteraction = () => {
           effect="zoom-in"
           duration="2000"
           delay={"1000"}
-          className="absolute bottom-[-190%] right-[10%] md:bottom-[-120%]  md:right-[25%] animate-bounce"
+          className="absolute top-[10%] right-[10%] md:top-[15%] xl:top-[20%]  md:right-[15%] animate-bounce"
         >
           <Image
             src="/assets/star.svg"
@@ -134,16 +137,19 @@ const DevicesInteraction = () => {
             className=""
           />
         </ScrollMotionEffect>
-      </ScrollMotionEffect>
+      </div>
 
-      <ScrollMotionEffect effect="fade-up" duration="2000">
+      <div
+      //  effect="fade-up"
+      //  duration="2000"
+      >
         <p className="text-lg text-stone-950 text-center mt-4 max-w-[600px] mx-auto">
           Program the devices with the Swop App. Will tap on other devices with
           or without the swop app downloaded.
         </p>
-      </ScrollMotionEffect>
+      </div>
 
-      <ScrollMotionEffect effect="fade-up" duration="2000">
+      <ScrollMotionEffect effect="zoom-in-up" duration="500">
         <div className="flex justify-center mt-8 md:mt-5 mx-auto">
           <Link
             href={""}

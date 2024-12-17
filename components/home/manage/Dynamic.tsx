@@ -5,8 +5,8 @@ import React from "react";
 const Dynamic = () => {
   return (
     <ScrollMotionEffect
-      effect="fade-up"
-      duration="2000"
+      effect="fade-left"
+      duration="500"
       className={
         "max-w-[330px] h-[444px] lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
       }
