@@ -15,7 +15,7 @@ const fira = Fira_Code({
 
 const HeroSection = () => {
   const variants = {
-    hidden: { opacity: 0, y: 50, blur: 10 },
+    hidden: { opacity: 0, y: 20, blur: 10 },
     visible: (i) => ({
       opacity: 1,
       y: 0,
