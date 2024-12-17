@@ -5,7 +5,7 @@ import React from "react";
 const Team = () => {
   return (
     <ScrollMotionEffect
-      effect="fade-right"
+      effect="fade-up"
       duration="500"
       delay={"200"}
       className={

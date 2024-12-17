@@ -5,7 +5,7 @@ import React from "react";
 const Dynamic = () => {
   return (
     <ScrollMotionEffect
-      effect="fade-left"
+      effect="fade-up"
       duration="500"
       delay={"200"}
       className={

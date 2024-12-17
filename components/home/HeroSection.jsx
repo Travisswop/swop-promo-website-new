@@ -113,7 +113,7 @@ const HeroSection = () => {
 
         <div className="flex justify-center gap-4">
           <Link href="href">
-            <ScrollMotionEffect effect="fade-right" duration="800">
+            <ScrollMotionEffect effect="fade-up" duration="800">
               <Image
                 src="/assets/home/app-store.png"
                 alt="appStore"
@@ -124,7 +124,7 @@ const HeroSection = () => {
             </ScrollMotionEffect>
           </Link>
           <Link href="href">
-            <ScrollMotionEffect effect="fade-left" duration="800">
+            <ScrollMotionEffect effect="fade-up" duration="800">
               <Image
                 src="/assets/home/google-play.png"
                 alt="googlePlay"

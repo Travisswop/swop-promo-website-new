@@ -7,7 +7,7 @@ import ScrollMotionEffect from "@/components/motion/ScrollMotionEffect";
 const Leads = () => {
   return (
     <ScrollMotionEffect
-      effect="fade-left"
+      effect="fade-up"
       duration="700"
       className="max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] border border-gray-200  rounded-3xl p-4 flex flex-col justify-between"
     >
