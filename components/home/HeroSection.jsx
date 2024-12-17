@@ -15,7 +15,7 @@ const fira = Fira_Code({
 
 const HeroSection = () => {
   const variants = {
-    hidden: { opacity: 0, y: 20, blur: 10 },
+    hidden: { opacity: 0, y: 50, blur: 10 },
     visible: (i) => ({
       opacity: 1,
       y: 0,
@@ -42,10 +42,28 @@ const HeroSection = () => {
             {/* h-[215px] md:h-[354px] */}
           </ScrollMotionEffect>
         </div>
-
-        <div
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          // variants={variants}
           className={cn(
-            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-6   relative"
+            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-8  [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)] relative"
+          )}
+        >
+          {text1.map((word, index) => (
+            <motion.div
+              variants={variants}
+              custom={index}
+              key={index}
+              className="text-[#333131] inline-block"
+            >
+              {word}
+            </motion.div>
+          ))}
+        </motion.div>
+        {/* <div
+          className={cn(
+            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-6   relative -z-50"
           )}
         >
           {text1.map((word, index) => (
@@ -54,7 +72,7 @@ const HeroSection = () => {
               duration={(200 + index * 50).toString()}
               key={index}
               className={cn(
-                "inline-block text-3xl md:text-6xl text-center font-black  text-[#B3B3B3]"
+                "inline-block text-3xl md:text-6xl text-center font-black "
               )}
             >
               <motion.div
@@ -62,7 +80,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0 }}
                 animate={{
                   opacity: 1,
-                  transition: { duration: 0.5 },
+                  transition: { duration: 3 },
                 }}
                 className="text-[#333131] inline-block"
               >
@@ -71,41 +89,9 @@ const HeroSection = () => {
             </ScrollMotionEffect>
           ))}
 
-          {/* {text2.map((word, index) => (
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.25, delay: index / 12 }}
-              key={index}
-              className="text-[#B396FF]"
-            >
-              {word}
-            </motion.span>
-          ))}
-          {text3.map((word, index) => (
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.25, delay: index / 12 }}
-              key={index}
-            >
-              {word}
-            </motion.span>
-          ))}
-          <br />
-          {text4.map((word, index) => (
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.25, delay: index / 12 }}
-              key={index}
-              className="text-[#B396FF] text-3xl md:text-5xl leading-10"
-            >
-              {word}
-            </motion.span>
-          ))} */}
-        </div>
-        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-6 max-w-[780px] bg-white">
+          
+        </div> */}
+        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-6 max-w-[780px] backdrop-blur-3xl">
           Turn your connections into earnings with Swop—leverage networking to
           unlock rewards, generate leads, and build meaningful relationships
           seamlessly.
