@@ -20,7 +20,7 @@ const HeroSection = () => {
       opacity: 1,
       y: 0,
       blur: 0,
-      transition: { duration: 0.5, delay: i * 0.03 },
+      transition: { duration: 1, delay: i * 0.03 },
     }),
   };
 
