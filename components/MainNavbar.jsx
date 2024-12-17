@@ -85,7 +85,7 @@ const MainNavbar = () => {
         >
           <div className="bounce-nav hidden md:flex justify-center items-center gap-2 lg:gap-4 text-gray-300  bg-[#191919] rounded-full p-2 h-14 ">
             <NavbarItem>
-              <div className="bg-white rounded-full">
+              <div className="bg-white rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out">
                 <Link href="/">
                   <Image
                     src="/assets/site-logo/navicon.png"
@@ -103,7 +103,7 @@ const MainNavbar = () => {
               <NavbarItem key={el.slug}>
                 <Link
                   href={el.slug}
-                  className={`text-sm md:text-base hover:text-[#AF97D4] ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
+                  className={`text-sm md:text-base hover:text-[#AF97D4] transition-all duration-300 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
                 >
                   {el.title}
                 </Link>

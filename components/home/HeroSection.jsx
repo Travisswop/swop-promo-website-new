@@ -6,7 +6,7 @@ import { Fira_Code } from "next/font/google";
 import { cn } from "@nextui-org/react";
 import Image from "next/image";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
-import { delay, motion, px } from "framer-motion";
+import { delay, motion, px, spring } from "framer-motion";
 
 const fira = Fira_Code({
   subsets: ["latin"],
@@ -35,7 +35,7 @@ const HeroSection = () => {
   return (
     <div className="container z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
       <div>
-        <div className="flex justify-center pt-12">
+        <div className="flex justify-center xs:pt-4 ms:pt-6 lg:pt-10  ">
           <ScrollMotionEffect effect="zoom-in" duration="2000">
             <Image
               src="/assets/home/heroImage.png"
@@ -43,8 +43,9 @@ const HeroSection = () => {
               width={500}
               height={500}
               quality={100}
-              className="w-[500px] h-auto"
+              className="w-[500px] xs:h-[215px] ms:h-[254px] md:h-[354px] xl:h-[371px] "
             />
+            {/* h-[215px] md:h-[354px] */}
           </ScrollMotionEffect>
         </div>
 
@@ -53,7 +54,7 @@ const HeroSection = () => {
           animate="visible"
           // variants={variants}
           className={cn(
-            "text-4xl md:text-[54px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 md:pt-10  [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)] relative"
+            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-8  [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)] relative"
           )}
         >
           {text1.map((word, index) => (
@@ -101,7 +102,7 @@ const HeroSection = () => {
             </motion.span>
           ))} */}
         </motion.div>
-        <h4 className="text-gray-400 text-center text-xl py-8 max-w-[780px]">
+        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-8 max-w-[780px]">
           Turn your connections into earnings with Swop—leverage networking to
           unlock rewards, generate leads, and build meaningful relationships
           seamlessly.
@@ -109,7 +110,7 @@ const HeroSection = () => {
 
         <div className="flex justify-center gap-4">
           <Link href="href">
-            <ScrollMotionEffect effect="fade-up" duration="1000">
+            <ScrollMotionEffect effect="fade-right" duration="800">
               <Image
                 src="/assets/home/app-store.png"
                 alt="appStore"
@@ -120,7 +121,7 @@ const HeroSection = () => {
             </ScrollMotionEffect>
           </Link>
           <Link href="href">
-            <ScrollMotionEffect effect="fade-up" duration="1000">
+            <ScrollMotionEffect effect="fade-left" duration="800">
               <Image
                 src="/assets/home/google-play.png"
                 alt="googlePlay"

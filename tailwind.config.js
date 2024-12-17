@@ -32,6 +32,16 @@ module.exports = {
           // "2xl": "8rem",
         },
       },
+
+      screens: {
+        xs: "320px",
+        ms: "375px",
+        sm: "425px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
     },
   },
   darkMode: "class",
