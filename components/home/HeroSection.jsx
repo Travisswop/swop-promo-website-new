@@ -105,7 +105,7 @@ const HeroSection = () => {
             </motion.span>
           ))} */}
         </div>
-        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-6 max-w-[780px]">
+        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-6 max-w-[780px] bg-white">
           Turn your connections into earnings with Swop—leverage networking to
           unlock rewards, generate leads, and build meaningful relationships
           seamlessly.
