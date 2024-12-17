@@ -9,7 +9,7 @@ const Team = () => {
       duration="500"
       delay={"200"}
       className={
-        "xs:max-w-[280px] ms:max-w-[330px] h-[444px] lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 flex flex-col justify-between items-center overflow-hidden "
+        "max-w-full h-[444px] lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 flex flex-col justify-between items-center overflow-hidden "
       }
     >
       {/* <Image

@@ -10,7 +10,7 @@ const SmartSite = () => {
       effect="zoom-in-up"
       duration="1000"
       className={
-        "max-w-[420px] md:w-full h-full m-auto row-span-2 bg-[#F5F5F5] rounded-3xl border border-gray-200  md:col-start-2 md:row-start-1 xl:row-start-1 xl:col-start-2"
+        "max-w-[420px] ms:w-full h-full m-auto row-span-2 bg-[#F5F5F5] rounded-3xl border border-gray-200  md:col-start-2 md:row-start-1 xl:row-start-1 xl:col-start-2"
       }
     >
       <div className="bg-[#F5F5F5] rounded-3xl p-4 w-full h-full flex flex-col justify-between">

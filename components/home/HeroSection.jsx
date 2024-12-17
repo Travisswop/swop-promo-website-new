@@ -37,7 +37,7 @@ const HeroSection = () => {
               width={500}
               height={500}
               quality={100}
-              className="w-[500px] xs:h-[215px] ms:h-[254px] md:h-[354px] xl:h-[371px] "
+              className="w-[500px] xs:h-[215px] ms:h-[254px] sm:h-[300px] md:h-[354px] xl:h-[371px] "
             />
             {/* h-[215px] md:h-[354px] */}
           </ScrollMotionEffect>
