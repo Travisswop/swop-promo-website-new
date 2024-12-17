@@ -9,7 +9,7 @@ const Build = () => {
       duration="1000"
       delay={"200"}
       className={
-        "max-w-[330px] h-full md:col-span-2 lg:col-span-1 lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
+        "max-w-[330px]  sm:max-w-[390px]  h-full md:col-span-2 lg:col-span-1 lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
       }
     >
       {/* <Image
@@ -19,7 +19,7 @@ const Build = () => {
         height={263}
         className="text-center"
       /> */}
-      <div className="h-[150px] xl:h-[220px] w-full scale-105 md:scale-100 lg:scale-110">
+      <div className="h-[150px] xl:h-[220px] sm:w-[80%] lg:w-[100%] w-full scale-105 md:scale-100 lg:scale-110">
         <video
           autoPlay
           loop

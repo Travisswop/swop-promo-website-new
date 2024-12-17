@@ -9,7 +9,7 @@ const Transact = () => {
       duration="1000"
       delay={"200"}
       className={
-        "max-w-[330px] h-full lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
+        "max-w-[330px] sm:max-w-[390px]  h-full lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
       }
     >
       {/* <Image
@@ -19,7 +19,7 @@ const Transact = () => {
         height={263}
         className="text-center"
       /> */}
-      <div className="h-[150px] xl:h-[220px] w-[90%] ">
+      <div className="h-[150px] xl:h-[220px] xs:w-[90%] sm:w-[75%] md:w-[90%] ">
         <video
           autoPlay
           loop
