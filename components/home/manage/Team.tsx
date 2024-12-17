@@ -9,7 +9,7 @@ const Team = () => {
       duration="500"
       delay={"200"}
       className={
-        "max-w-full h-[444px] lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 flex flex-col justify-between items-center overflow-hidden "
+        "xs:max-w-[304px] ms:max-w-[330px] h-[444px] m-auto md:max-w-full bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 flex flex-col justify-between items-center overflow-hidden "
       }
     >
       {/* <Image
@@ -27,7 +27,7 @@ const Team = () => {
         playsInline
         preload="auto"
         style={{ display: "block" }}
-        className="h-[300px]  w-[100%] scale-110 lg:scale-125 lg:translate-y-8 xl:scale-150 xl:translate-y-0 -z-50 "
+        className="h-[300px]  scale-110 lg:scale-125 lg:translate-y-8 xl:scale-150 xl:translate-y-0 -z-50 "
       >
         <source
           src="/assets/home/manage/manageTheEntireTeam.mp4"
