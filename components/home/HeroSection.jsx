@@ -20,7 +20,7 @@ const HeroSection = () => {
       opacity: 1,
       y: 0,
       blur: 0,
-      transition: { duration: 1, delay: i * 0.03 },
+      transition: { duration: 0.5, delay: i * 0.04 },
     }),
   };
 
@@ -91,7 +91,7 @@ const HeroSection = () => {
 
           
         </div> */}
-        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-6 max-w-[780px] backdrop-blur-3xl">
+        <h4 className="text-gray-400 text-center xs:text-sm ms:text-xl py-4 lg:py-6 max-w-[780px]">
           Turn your connections into earnings with Swop—leverage networking to
           unlock rewards, generate leads, and build meaningful relationships
           seamlessly.
