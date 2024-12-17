@@ -1,24 +1,100 @@
+"use client";
 import ScrollMotionEffect from "@/components/motion/ScrollMotionEffect";
 import SectionLayout from "@/components/shared/SectionLayout";
 import { cn } from "@nextui-org/react";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { delay, motion, useInView } from "framer-motion";
 
 const InteractiveSection = () => {
+  const variants = {
+    hidden: { opacity: 0, y: 30, blur: 100 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      blur: 0,
+      transition: { duration: 0.8, delay: i * 0.03 },
+    }),
+  };
+  const text = "Interactive Layer".split("");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <div className="container ">
       <div className="relative">
         <div className="absolute left-[-155%] md:left-[-80%] lg:left-[-70%] xl:left-[-55%] top-[-100px] md:top-[-200px] bottom-0 w-full gradient-circle-top h-[500px] md:h-[1000px] -z-10 " />
         <h2
           className={cn(
-            "text-3xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]"
+            "text-3xl md:text-6xl font-bold text-black text-center leading-tight tracking-normal "
           )}
         >
           Welcome to the
-          <span className="block text-3xl py-6">
-            <span className="text-[#B396FF]"> Interactive </span>Layer
+          <span className="block">
+            {text.map((word, index) => (
+              <ScrollMotionEffect
+                effect="fade-up"
+                duration={(500 + index * 50).toString()}
+                key={index}
+                className={cn(
+                  "inline-block text-3xl md:text-6xl text-center font-black  text-[#B3B3B3]"
+                )}
+              >
+                <motion.div
+                  key={index}
+                  initial={{ filter: "blur(10px)" }}
+                  animate={{
+                    filter: "blur(0px)",
+                    transition: { duration: 1, ease: "easeInOut" },
+                    delay: 0.5,
+                  }}
+                >
+                  {word}
+                </motion.div>
+              </ScrollMotionEffect>
+            ))}
           </span>
         </h2>
+        {/* <ScrollMotionEffect effect="fade-up" duration="2000">
+          <motion.div
+            ref={ref}
+            initial={isInView ? "hidden" : "hidden"}
+            animate={isInView ? "visible" : "visible"}
+            className={cn("text-center relative")}
+          >
+            {text.map((word, index) => (
+              <motion.div
+                variants={variants}
+                custom={index}
+                key={index}
+                className={cn(
+                  "inline-block text-3xl md:text-6xl font-black  text-[#B3B3B3]"
+                )}
+              >
+                {word}{" "}
+              </motion.div>
+            ))}
+          </motion.div>
+        </ScrollMotionEffect> */}
+        {/* <motion.div
+          initial="hidden"
+          animate="visible"
+          // variants={variants}
+          className={cn(
+            "xs:text-3xl ms:text-4xl md:text-5xl lg:text-[80px] font-bold text-[#333131] text-center leading-tight tracking-normal pt-5 xl:pt-8  [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)] relative"
+          )}
+        >
+          {text.map((word, index) => (
+            <motion.div
+              variants={variants}
+              custom={index}
+              key={index}
+              className="text-[#333131] inline-block"
+            >
+              {word}
+            </motion.div>
+          ))}
+        </motion.div> */}
+
         <ScrollMotionEffect
           effect="zoom-in"
           duration="2000"
@@ -48,7 +124,7 @@ const InteractiveSection = () => {
             className=""
           />
         </ScrollMotionEffect>
-        <div className="flex justify-center flex-1 relative -translate-x-6 md:-translate-x-10 xl:w-2/4 text-center m-auto">
+        <div className="flex justify-center flex-1 relative -translate-x-6 md:-translate-x-10 xl:w-2/4 text-center m-auto h-[481px] pt-10">
           <div className="w-[70%] m-auto">
             <video
               autoPlay

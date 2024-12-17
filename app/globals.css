@@ -241,7 +241,7 @@ video::-webkit-media-controls-panel {
   }
 }
 .bounce-nav{
-  animation: bounce-nav 3.5s normal ;
+  animation: bounce-nav 3s normal ;
 }
 @keyframes bounce-nav {
   0% {

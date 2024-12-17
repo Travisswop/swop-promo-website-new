@@ -10,7 +10,7 @@ const Messaging = () => {
       effect="fade-up"
       duration="1000"
       className={
-        "max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] rounded-2xl p-4 flex flex-col justify-between"
+        "max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] rounded-3xl border border-gray-200 p-4 flex flex-col justify-between"
       }
     >
       <div className="relative h-[185px] w-full m-auto ">
@@ -83,8 +83,8 @@ const Messaging = () => {
 
       <div className="bg-[#F5F5F5]">
         <h4 className="text-center text-base text-gray-400">
-          Message directly through your Swop Smartsite and send payments, tokens
-          and more.
+          Use your Swop.ID URL to receive for encrypted messaging on the
+          blockchain.
         </h4>
       </div>
     </ScrollMotionEffect>

@@ -25,17 +25,11 @@ const HeroSection = () => {
   };
 
   const text1 = "Get Paid to Network".split("");
-  // const text2 = "   Paid ".split("");
-  // const text3 = "        to".split("");
-  // const text4 = "Network".split("");
-  // const text5 = "Get paid to".split("");
-
-  // const text6 = "network".split("");
 
   return (
     <div className="container z-50 flex flex-col items-center justify-center w-full gap-6 md:flex-row 2xl:pt-10 ">
       <div>
-        <div className="flex justify-center xs:pt-4 ms:pt-6 lg:pt-10  ">
+        <div className="flex justify-center xs:pt-4 ms:pt-6 lg:pt-16  ">
           <ScrollMotionEffect effect="zoom-in" duration="2000">
             <Image
               src="/assets/home/heroImage.png"

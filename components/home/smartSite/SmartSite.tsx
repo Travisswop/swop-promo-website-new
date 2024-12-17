@@ -10,14 +10,13 @@ const SmartSite = () => {
       effect="fade-up"
       duration="1000"
       className={
-        "max-w-[420px] md:w-full h-full m-auto row-span-2 bg-[#F5F5F5] rounded-xl md:col-start-2 md:row-start-1 xl:row-start-1 xl:col-start-2"
+        "max-w-[420px] md:w-full h-full m-auto row-span-2 bg-[#F5F5F5] rounded-3xl border border-gray-200  md:col-start-2 md:row-start-1 xl:row-start-1 xl:col-start-2"
       }
     >
-      <div className="bg-[#F5F5F5] rounded-2xl p-4 w-full h-full flex flex-col justify-between">
+      <div className="bg-[#F5F5F5] rounded-3xl p-4 w-full h-full flex flex-col justify-between">
         <div>
           <h3 className="font-semibold text-lg text-center p-5">
-            Get Your Entire Team A
-            <span className="text-[#B396FF]"> Smartsite </span>
+            Upgrade to A Smartsite
           </h3>
         </div>
         <Image
@@ -30,8 +29,10 @@ const SmartSite = () => {
         />
         <div>
           <h4 className="text-base text-center text-gray-400 pt-4 lg:pt-0">
-            Use your smartsite as your companies town square and share it with
-            NFC, QR or Apple Wallet.
+            Your customer routing tool.
+          </h4>
+          <h4 className="text-base text-center text-gray-400 pt-4">
+            Build. Grow. Connect.
           </h4>
         </div>
       </div>

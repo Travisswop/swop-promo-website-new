@@ -4,37 +4,38 @@ import React from "react";
 import Link from "next/link";
 import ScrollMotionEffect from "@/components/motion/ScrollMotionEffect";
 
-const Bank = () => {
+const Leads = () => {
   return (
     <ScrollMotionEffect
       effect="fade-up"
       duration="1000"
-      className="max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] rounded-2xl p-4 flex flex-col justify-between"
+      className="max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] border border-gray-200  rounded-3xl p-4 flex flex-col justify-between"
     >
       <div className="relative h-[185px] w-full">
         <Image
-          src="/assets/home/smart-site/bank.svg"
+          src="/assets/home/smart-site/social.png"
           alt="bank"
           width={300}
           height={150}
           quality={100}
-          className="m-auto absolute top-0 left-0 right-0 bottom-0 scale-125 md:scale-150"
+          className="m-auto absolute top-0 left-0 right-0 bottom-0 rounded-lg"
         />
       </div>
-      <div className="m-auto py-4">
+      <div className="m-auto">
         <h3 className="m-auto font-semibold text-lg text-center">
-          Bank Yourself
+          Social Feed{" "}
         </h3>
       </div>
 
       <div>
         <h5 className="text-base text-center text-gray-400">
-          Accept Payments directly your Smartsites and it deposits instantly in
-          your wallet.
+          Tag¹ is designed to add a digital layer to your physical products. As
+          such, explore a variety of form factors and styles for various
+          products.
         </h5>
       </div>
     </ScrollMotionEffect>
   );
 };
 
-export default Bank;
+export default Leads;

@@ -7,8 +7,8 @@ import SectionLayout from "../shared/SectionLayout";
 import Messaging from "./smartSite/Messaging";
 import SmartSite from "./smartSite/SmartSite";
 import Analytics from "./smartSite/Analytics";
-import Bank from "./smartSite/Bank";
-import Leads from "./smartSite/Leads";
+import Self from "./smartSite/Self";
+import Social from "./smartSite/Social";
 
 const Smartsite = () => {
   return (
@@ -17,8 +17,8 @@ const Smartsite = () => {
         <Messaging />
         <SmartSite />
         <Analytics />
-        <Bank />
-        <Leads />
+        <Self />
+        <Social />
       </div>
     </div>
   );
