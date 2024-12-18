@@ -25,15 +25,13 @@ const Analytics = () => {
         />
       </div>
       <div className="m-auto  z-10">
-        <h3 className="m-auto font-semibold text-lg text-center">
-          Analytics With ROI
-        </h3>
+        <h3 className="m-auto font-semibold text-lg text-center">Analytics</h3>
       </div>
 
       <div className="">
         <h4 className="text-base text-center text-gray-400">
-          Tag¹ is built for data on tap. Gain access to data points upon tap and
-          optimize engagement with actionable data.
+          Track your employees networking and collect data for your CRM while
+          providing insights to increase ROI
         </h4>
       </div>
     </ScrollMotionEffect>

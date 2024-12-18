@@ -15,9 +15,10 @@ const Dynamic = () => {
       <Image
         src="/assets/home/manage/qr.png"
         alt="qr"
-        width={147}
-        height={210}
-        className="text-center md:scale-125 relative md:translate-y-10 lg:scale-110 xl:scale-125 xl:translate-y-14"
+        width={247}
+        height={250}
+        className="text-center md:scale-125 relative md:translate-y-20
+        md:pb-20 lg:scale-110 lg:translate-y-16 lg:pt-10 lg:pb-12 xl:scale-125 xl:pb-16 xl:translate-y-16"
         quality={100}
       />
 

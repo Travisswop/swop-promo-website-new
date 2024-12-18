@@ -13,7 +13,7 @@ const Leads = () => {
     >
       <div className="relative h-[185px] w-full">
         <Image
-          src="/assets/home/smart-site/social.png"
+          src="/assets/home/smart-site/lead.png"
           alt="bank"
           width={300}
           height={150}
@@ -22,16 +22,13 @@ const Leads = () => {
         />
       </div>
       <div className="m-auto">
-        <h3 className="m-auto font-semibold text-lg text-center">
-          Social Feed{" "}
-        </h3>
+        <h3 className="m-auto font-semibold text-lg text-center">Leads</h3>
       </div>
 
       <div>
         <h5 className="text-base text-center text-gray-400">
-          Tag¹ is designed to add a digital layer to your physical products. As
-          such, explore a variety of form factors and styles for various
-          products.
+          Leads from your Smartsites flow right to the dashboard where you earn
+          $Swop for verified Leads
         </h5>
       </div>
     </ScrollMotionEffect>

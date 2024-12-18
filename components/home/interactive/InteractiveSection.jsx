@@ -115,7 +115,7 @@ const InteractiveSection = () => {
           ))}
         </motion.div> */}
 
-        <ScrollMotionEffect
+        {/* <ScrollMotionEffect
           effect="zoom-in"
           duration="2000"
           delay={"500"}
@@ -143,8 +143,8 @@ const InteractiveSection = () => {
             height={30}
             className=""
           />
-        </ScrollMotionEffect>
-        <div className="flex justify-center flex-1 relative -translate-x-6 md:-translate-x-10 xl:w-2/4 text-center m-auto">
+        </ScrollMotionEffect> */}
+        <div className="flex justify-center flex-1 relative -translate-x-4 md:-translate-x-8 lg:-translate-x-12 xl:-translate-x-7 xl:w-2/4 text-center m-auto">
           <div className="w-[70%] m-auto">
             <video
               autoPlay

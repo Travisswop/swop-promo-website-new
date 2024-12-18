@@ -23,14 +23,14 @@ const Bank = () => {
       </div>
       <div className="m-auto">
         <h3 className="m-auto font-semibold text-lg text-center">
-          Self Custody Wallets
+          Bank Yourself
         </h3>
       </div>
 
       <div>
         <h5 className="text-base text-center text-gray-400">
-          Global banking solution with instant settlement time and lower
-          transaction cost.
+          Accept Payments directly your Smartsites and it deposits instantly in
+          your wallet.
         </h5>
       </div>
     </ScrollMotionEffect>

@@ -1,9 +1,13 @@
+"use client";
+
 import React from "react";
 import SectionLayout from "../shared/SectionLayout";
 import Link from "next/link";
 import ProductCards from "./ProductCards";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 import Image from "next/image";
+import { cn } from "@nextui-org/react";
+import { delay, motion, useInView } from "framer-motion";
 
 const productInfo = [
   {
@@ -56,6 +60,17 @@ experiences with just a tap.`,
 ];
 
 const DevicesInteraction = () => {
+  const variants = {
+    hidden: { opacity: 0, y: 30, blur: 100 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      blur: 0,
+      transition: { duration: 0.8, delay: i * 0.03 },
+    }),
+  };
+
+  const text = "Interaction".split("");
   return (
     <div className="relative container">
       <div
@@ -63,11 +78,38 @@ const DevicesInteraction = () => {
       // duration="2000"
       >
         <h2
-          className={`text-stone-950 font-bold xs:text-3xl ms:text-4xl md:text-5xl text-center !leading-none py-5`}
+          className={`text-stone-950 font-bold text-3xl md:text-6xl text-center !leading-none py-5`}
         >
-          Devices for Any <span className="block">Interaction</span>
+          Devices for Any{" "}
+          <span className="block text-[#b3b3b3]">
+            {text.map((word, index) => (
+              <ScrollMotionEffect
+                effect="fade-up"
+                duration={(500 + index * 50).toString()}
+                delay={500}
+                key={index}
+                className={cn("font-extrabold inline-block")}
+              >
+                <motion.div
+                  key={index}
+                  initial={{ filter: "blur(50px)" }}
+                  viewport={{ once: true }}
+                  // whileInView={{ filter: "blur(10px)" }}
+                  animate={{
+                    filter: "blur(0px)",
+                    transition: { duration: 1 },
+                  }}
+                  className={cn(
+                    " text-3xl md:text-6xl text-center  text-[#B3B3B3]"
+                  )}
+                >
+                  {word}
+                </motion.div>
+              </ScrollMotionEffect>
+            ))}
+          </span>
         </h2>
-        <ScrollMotionEffect
+        {/* <ScrollMotionEffect
           effect="zoom-in"
           duration="2000"
           delay={"500"}
@@ -136,7 +178,7 @@ const DevicesInteraction = () => {
             height={45}
             className=""
           />
-        </ScrollMotionEffect>
+        </ScrollMotionEffect> */}
       </div>
 
       <div

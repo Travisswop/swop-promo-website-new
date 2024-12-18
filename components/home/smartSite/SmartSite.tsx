@@ -15,8 +15,9 @@ const SmartSite = () => {
     >
       <div className="bg-[#F5F5F5] rounded-3xl p-4 w-full h-full flex flex-col justify-between">
         <div>
-          <h3 className="font-semibold text-lg text-center p-5">
-            Upgrade to A Smartsite
+          <h3 className="font-semibold text-lg text-center p-5 tracking-wider">
+            Get Your Entire <br />
+            Team A <span className="text-[#B5A1D5]">Smartsite</span>
           </h3>
         </div>
         <Image
@@ -28,11 +29,9 @@ const SmartSite = () => {
           quality={100}
         />
         <div>
-          <h4 className="text-base text-center text-gray-400 pt-4 lg:pt-0">
-            Your customer routing tool.
-          </h4>
-          <h4 className="text-base text-center text-gray-400 pt-4">
-            Build. Grow. Connect.
+          <h4 className="text-base text-center text-gray-400 pt-4 ">
+            Use your smartsite as your companies townsquare and share it with
+            NFC, QR or Apple Wallet.
           </h4>
         </div>
       </div>

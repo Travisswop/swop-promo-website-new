@@ -83,8 +83,8 @@ const Messaging = () => {
 
       <div className="bg-[#F5F5F5]">
         <h4 className="text-center text-base text-gray-400">
-          Use your Swop.ID URL to receive for encrypted messaging on the
-          blockchain.
+          Message directly through your Swop Smartsite and send payments, tokens
+          and more.
         </h4>
       </div>
     </ScrollMotionEffect>
