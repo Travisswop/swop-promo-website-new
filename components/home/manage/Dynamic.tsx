@@ -9,7 +9,7 @@ const Dynamic = () => {
       duration="500"
       delay={"200"}
       className={
-        "max-w-[330px] sm:max-w-[390px]  h-[444px] lg:max-w-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
+        "max-w-[330px] sm:max-w-[390px] h-full  lg:max-w-full md:pt-10 lg:pt-0 m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center"
       }
     >
       <Image
@@ -17,12 +17,14 @@ const Dynamic = () => {
         alt="qr"
         width={147}
         height={210}
-        className="text-center "
+        className="text-center md:scale-125 relative md:translate-y-10 lg:scale-110 xl:scale-125 xl:translate-y-14"
         quality={100}
       />
 
       <div>
-        <h3 className="font-semibold text-lg text-center">Dynamic QR</h3>
+        <h3 className="font-semibold text-lg text-center md:pt-16">
+          Dynamic QR
+        </h3>
       </div>
       <div>
         <h4 className="text-base text-center text-gray-400">

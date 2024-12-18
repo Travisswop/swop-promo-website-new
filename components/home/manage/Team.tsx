@@ -9,7 +9,7 @@ const Team = () => {
       duration="500"
       delay={"200"}
       className={
-        "xs:max-w-[304px] ms:max-w-[330px] sm:max-w-[390px]  h-[444px] m-auto md:max-w-full bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 flex flex-col justify-between items-center overflow-hidden "
+        "xs:w-[304px] ms:w-[330px] sm:w-[390px] m-auto md:w-full  bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 self-stretch flex flex-col justify-between items-center overflow-hidden "
       }
     >
       {/* <Image
@@ -36,19 +36,19 @@ const Team = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div>
+      <div className="w-full">
         <h3 className="font-semibold text-lg text-center z-50">
           Manage The Entire Team
         </h3>
       </div>
-      <div className="max-w-full flex-grow">
+      <div className="w-full flex-grow">
         <h4 className="text-lg text-center text-gray-400 max-w-full flex-grow">
           Tag¹ facilitates an instant and connection. Activate immersive brand
           experiences with just a tap.
         </h4>
-        <h5 className="bg-clip-text bg-transparent text-transparent ">
+        {/* <h5 className="bg-clip-text bg-transparent text-transparent ">
           ......................................................................................................................................................................................................................................................................................................
-        </h5>
+        </h5> */}
       </div>
     </ScrollMotionEffect>
   );

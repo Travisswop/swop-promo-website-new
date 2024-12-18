@@ -11,7 +11,7 @@ const ManageTeam = () => {
   return (
     <div className="bg-[#F5F5F5]">
       <div className="container">
-        <div className="py-10 lg:py-20 grid grid-cols-1 auto-rows-min   md:grid-cols-2 lg:grid-cols-3 gap-8 h-full items-stretch self-stretch md:px-2">
+        <div className="py-10 lg:py-20 grid grid-cols-1 auto-rows-min   md:grid-cols-2 lg:grid-cols-3 gap-8 h-full items-stretch md:px-2">
           <Team />
           <Dynamic />
           <Transact />
