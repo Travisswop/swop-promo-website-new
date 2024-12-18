@@ -63,7 +63,7 @@ const DevicesInteraction = () => {
       // duration="2000"
       >
         <h2
-          className={`text-stone-950 font-medium text-3xl md:text-4xl lg:text-5xl text-center !leading-none py-5`}
+          className={`text-stone-950 font-bold xs:text-3xl ms:text-4xl md:text-5xl text-center !leading-none py-5`}
         >
           Devices for Any <span className="block">Interaction</span>
         </h2>
@@ -160,7 +160,7 @@ const DevicesInteraction = () => {
         </div>
       </ScrollMotionEffect>
 
-      <div className="mt-8 px-2  m-auto">
+      <div className="mt-20 px-2  m-auto">
         <ProductCards productList={productInfo} />
       </div>
 

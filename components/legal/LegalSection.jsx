@@ -14,7 +14,7 @@ const LegalSection = () => {
     <div className="leading-tighter tracking-tight container">
       <ScrollMotionEffect effect="fade-up" duration="2000">
         <h2
-          className={`text-stone-950 font-normal text-xl md:text-3xl text-center !leading-none`}
+          className={`text-stone-950 font-normal xs:text-3xl ms:text-4xl md:text-5xl text-center !leading-none`}
         >
           <strong>Legal</strong>
         </h2>

@@ -16,7 +16,7 @@ const Form = () => {
         <div className="absolute left-[-155%] md:left-[-80%] lg:left-[-70%] xl:left-[-55%] top-[-100px] md:top-[-200px] bottom-0 w-full gradient-circle-top h-[500px] md:h-[1000px] -z-10 " />
         <ScrollMotionEffect effect="zoom-in-up" duration="1000" delay={"500"}>
           <form className="max-w-[900px] mx-auto bg-[#FAFAFA] py-10 grid grid-cols-1 auto-rows-min items-center justify-center  gap-3  rounded-2xl p-10 w-full">
-            <h2 className="text-2xl font-semibold md:text-3xl m-auto text-center mb-5 w-52">
+            <h2 className="text-3xl font-semibold md:text-4xl m-auto text-center mb-5 w-52">
               Savings Calculator
             </h2>
             <div className="mb-5 w-full ">
@@ -27,7 +27,7 @@ const Form = () => {
                 Number of Employees
               </label>
               <input
-                className="bg-gray-50 w-full border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block p-2.5 py-2.5 placeholder:text-base"
+                className="bg-gray-50 w-full border border-gray-300 text-gray-900 text-base rounded-md focus:ring-black focus:border-black block p-2.5 py-2.5 placeholder:text-base"
                 placeholder=""
                 required
                 type="text"
@@ -44,7 +44,7 @@ const Form = () => {
                 Number of Business Cards Per Employee
               </label>
               <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base"
                 required
                 type="text"
                 name="cards"
@@ -60,7 +60,7 @@ const Form = () => {
                 Average Cost Per Business Card
               </label>
               <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base"
                 required
                 type="text"
                 name="avgCost"

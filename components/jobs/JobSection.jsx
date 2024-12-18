@@ -358,12 +358,12 @@ const JobSection = () => {
         duration="2000"
         className={"tracking-tighter"}
       >
-        <h2
-          className={`text-stone-950 font-normal text-xl md:text-3xl text-center pt-2`}
+        <h1
+          className={`text-stone-950 font-normal xs:text-2xl ms:text-4xl md:text-5xl text-center pt-2`}
         >
           <strong>Jobs</strong>
-        </h2>
-        <p className="text-md md:text-lg text-stone-950 text-center mt-4 max-w-[620px] mx-auto leading-tight">
+        </h1>
+        <p className="text-lg md:text-xl text-stone-950 text-center mt-4 max-w-[620px] mx-auto leading-tight">
           Discover rewarding career paths, innovative work environments, and the
           chance to grow with us. Find your perfect job and start making an
           impact today.

@@ -98,8 +98,11 @@ const HeroSection = () => {
         </h4>
 
         <div className="flex justify-center gap-4">
-          <Link href="href">
-            <ScrollMotionEffect effect="fade-up" duration="800">
+          <Link
+            href="https://apps.apple.com/us/app/swop-connecting-the-world/id1593201322"
+            target="_blank"
+          >
+            <ScrollMotionEffect effect="zoom-in-up" duration="800">
               <Image
                 src="/assets/home/app-store.png"
                 alt="appStore"
@@ -109,8 +112,11 @@ const HeroSection = () => {
               />
             </ScrollMotionEffect>
           </Link>
-          <Link href="href">
-            <ScrollMotionEffect effect="fade-up" duration="800">
+          <Link
+            href="https://play.google.com/store/apps/details?id=com.travisheron.swopapp"
+            target="_blank"
+          >
+            <ScrollMotionEffect effect="zoom-in-up" duration="800">
               <Image
                 src="/assets/home/google-play.png"
                 alt="googlePlay"

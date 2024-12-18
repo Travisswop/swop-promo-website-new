@@ -28,13 +28,16 @@ const FormCards = ({ cardCost, businessCardCost, yearlySavings, increase }) => {
         </h3>
         <h6 className="text-3xl font-semibold">${businessCardCost * 1}</h6>
       </div>
-      <div className=" lg:col-span-2 w-full flex flex-col lg:flex-row-reverse gap-4 justify-around items-center p-4 bg-white rounded-2xl border border-gray-200">
-        <Image
-          src="/assets/home/form/savings.png"
-          alt="savings"
-          width={80}
-          height={88}
-        />
+      <div className=" lg:col-span-2 w-full flex flex-col lg:flex-row-reverse gap-4 justify-between items-center p-4 bg-white rounded-2xl border border-gray-200">
+        <div className="lg:pr-32">
+          <Image
+            src="/assets/home/form/savings.png"
+            alt="savings"
+            width={80}
+            height={88}
+            className=""
+          />
+        </div>
         <div className="lg:w-1/2 flex flex-col gap-4 justify-around items-center">
           <h3 className="text-[14px] text-center font-semibold">
             Total Yearly Savings:

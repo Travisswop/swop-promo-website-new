@@ -5,9 +5,9 @@ import React from "react";
 const Earn = () => {
   return (
     <ScrollMotionEffect
-      effect="fade-up"
-      duration="1000"
-      delay={"200"}
+      effect="zoom-in-up"
+      duration="800"
+      delay={300}
       className={
         "max-w-[330px] sm:max-w-[390px]  lg:max-w-full h-full m-auto bg-[#ffffff] rounded-2xl p-6 flex flex-col justify-between items-center overflow-hidden"
       }

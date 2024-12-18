@@ -5,9 +5,9 @@ import React from "react";
 const Team = () => {
   return (
     <ScrollMotionEffect
-      effect="fade-up"
-      duration="500"
-      delay={"200"}
+      effect="zoom-in-up"
+      duration="800"
+      delay={300}
       className={
         "xs:w-[304px] ms:w-[330px] sm:w-[390px] m-auto md:w-full  bg-[#ffffff] rounded-2xl p-6 lg:col-span-2 self-stretch flex flex-col justify-between items-center overflow-hidden "
       }
