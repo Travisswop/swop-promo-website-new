@@ -81,7 +81,7 @@ const Messaging = () => {
         </h3>
       </div>
 
-      <div className="bg-[#F5F5F5]">
+      <div className="bg-[#F5F5F5]  lg:w-2/3 m-auto">
         <h4 className="text-center text-base text-gray-400">
           Message directly through your Swop Smartsite and send payments, tokens
           and more.

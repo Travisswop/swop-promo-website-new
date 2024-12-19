@@ -28,7 +28,7 @@ const Analytics = () => {
         <h3 className="m-auto font-semibold text-lg text-center">Analytics</h3>
       </div>
 
-      <div className="">
+      <div className=" lg:w-2/3 m-auto">
         <h4 className="text-base text-center text-gray-400">
           Track your employees networking and collect data for your CRM while
           providing insights to increase ROI

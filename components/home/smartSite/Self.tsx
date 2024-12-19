@@ -27,7 +27,7 @@ const Bank = () => {
         </h3>
       </div>
 
-      <div>
+      <div className="lg:w-2/3 m-auto">
         <h5 className="text-base text-center text-gray-400">
           Accept Payments directly your Smartsites and it deposits instantly in
           your wallet.

@@ -28,7 +28,7 @@ const SmartSite = () => {
           className="m-auto relative left-3"
           quality={100}
         />
-        <div>
+        <div className="lg:w-2/3 m-auto">
           <h4 className="text-base text-center text-gray-400 pt-4 ">
             Use your smartsite as your companies townsquare and share it with
             NFC, QR or Apple Wallet.

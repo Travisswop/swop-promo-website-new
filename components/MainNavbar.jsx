@@ -80,35 +80,37 @@ const MainNavbar = () => {
         </NavbarContent>
 
         <NavbarContent
-          className=" hidden md:flex gap-2 lg:gap-4 text-gray-300   rounded-full  "
+          className=" hidden md:flex gap-2 lg:gap-4 text-gray-300   rounded-full "
           justify="center"
         >
-          <div className="bounce-nav hidden md:flex justify-center items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-14 ">
+          <div className="bounce-nav hidden md:flex justify-between items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-12 lg:w-[400px] w-[350px]">
             <NavbarItem>
-              <div className="bg-white rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out">
+              <div className="bg-white rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out -translate-x-1">
                 <Link href="/">
                   <Image
                     src="/assets/site-logo/navicon.png"
                     alt="Swop Logo"
-                    width={40}
-                    height={40}
+                    width={35}
+                    height={35}
                     quality={100}
                     priority
-                    className=" rounded-full animate-slow-bounce"
+                    className=" rounded-full animate-slow-bounce "
                   />
                 </Link>
               </div>
             </NavbarItem>
-            {menuItems.map((el) => (
-              <NavbarItem key={el.slug}>
-                <Link
-                  href={el.slug}
-                  className={`text-sm md:text-base hover:text-[#AF97D4] transition-all duration-300 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
-                >
-                  {el.title}
-                </Link>
-              </NavbarItem>
-            ))}
+            <NavbarItem className="flex-grow  flex items-center justify-around">
+              {menuItems.map((el) => (
+                <div key={el.slug} className="">
+                  <Link
+                    href={el.slug}
+                    className={`text-sm md:text-sm hover:text-[#AF97D4] transition-all duration-300 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
+                  >
+                    {el.title}
+                  </Link>
+                </div>
+              ))}
+            </NavbarItem>
           </div>
         </NavbarContent>
 

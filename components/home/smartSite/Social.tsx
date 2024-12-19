@@ -11,21 +11,25 @@ const Leads = () => {
       duration="700"
       className="max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] border border-gray-200  rounded-3xl p-4 flex flex-col justify-between"
     >
-      <div className="relative h-[185px] w-full">
-        <Image
-          src="/assets/home/smart-site/lead.png"
-          alt="bank"
-          width={300}
-          height={150}
-          quality={100}
-          className="m-auto absolute top-0 left-0 right-0 bottom-0 rounded-lg"
-        />
+      <div className="w-[25%] m-auto">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          style={{ display: "block" }}
+          className=" "
+        >
+          <source src="/assets/home/smart-site/lead.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="m-auto">
         <h3 className="m-auto font-semibold text-lg text-center">Leads</h3>
       </div>
 
-      <div>
+      <div className=" lg:w-2/3 m-auto">
         <h5 className="text-base text-center text-gray-400">
           Leads from your Smartsites flow right to the dashboard where you earn
           $Swop for verified Leads
