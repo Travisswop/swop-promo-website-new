@@ -4,71 +4,151 @@ import Image from "next/image";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const linkInfo = [
+  // {
+  //   img: "/assets/company/travis.png",
+  //   name: "Travis Herron",
+  //   title: "Founder & CEO at SWOP",
+  // },
+  // {
+  //   img: "/assets/company/neel.png",
+  //   name: "Arjo Neel",
+  //   title: "Chief Operating Officer (COO)",
+  // },
+  // {
+  //   img: "/assets/company/salman.png",
+  //   name: "Salman H Saikote",
+  //   title: "Chief Technology Officer (CTO)",
+  // },
+  // {
+  //   img: "/assets/company/Rashed Sheikh.png",
+  //   name: "Rashed Sheikh",
+  //   title: "",
+  // },
+  // {
+  //   img: "/assets/company/Sadit Ahsan.png",
+  //   name: "Sadit Ahsan",
+  //   title: "",
+  // },
+  // {
+  //   img: "/assets/company/Rakibul Islam.png",
+  //   name: "Rakibul Islam",
+  //   title: "",
+  // },
+  // {
+  //   img: "/assets/company/Shouvik Chowdhury.png",
+  //   name: "Shouvik Chowdhury",
+  //   title: "",
+  // },
+  // {
+  //   img: "/assets/company/Gazi Monir-uz-zaman.png",
+  //   name: "Gazi Monir-uz-zaman",
+  //   title: "",
+  // },
+
+  // {
+  //   img: "/assets/company/Nurul Islam.png",
+  //   name: "Nurul Islam ",
+  //   title: "",
+  // },
+  // {
+  //   img: "/assets/company/Nuruzaman Milon.png",
+  //   name: "Md. Nuruzaman Milon",
+  //   title: "",
+  // },
+  // {
+  //   img: "/assets/company/AR Sahak.png",
+  //   name: "AR Sahak",
+  //   title: "",
+  // },
+  // {
+  //   img: "/assets/company/Raihan Ali.png",
+  //   name: "Raihan Ali",
+  //   title: "",
+  // },
+  // {
+  //   img: "/assets/company/Fuad Hasan.png",
+  //   name: "Fuad Hasan",
+  //   title: "",
+  // },
+
   {
     img: "/assets/company/travis.png",
     name: "Travis Herron",
-    title: "Founder & CEO at SWOP",
+    id: 1,
+    title: "Co founder & Chairman",
   },
   {
     img: "/assets/company/neel.png",
     name: "Arjo Neel",
-    title: "Chief Operating Officer (COO)",
+    id: 2,
+    title: "Co Founder & COO",
   },
   {
     img: "/assets/company/salman.png",
     name: "Salman H Saikote",
-    title: "Chief Technology Officer (CTO)",
+    id: 3,
+    title: "Co Founder & CTO",
   },
   {
     img: "/assets/company/Rashed Sheikh.png",
     name: "Rashed Sheikh",
-    title: "",
+    id: 4,
+    title: "Blockchain Advisor",
   },
   {
     img: "/assets/company/Sadit Ahsan.png",
     name: "Sadit Ahsan",
-    title: "",
+    id: 5,
+    title: "Head of Design",
   },
   {
     img: "/assets/company/Rakibul Islam.png",
     name: "Rakibul Islam",
-    title: "",
+    id: 6,
+    title: "Lead Backend",
   },
   {
     img: "/assets/company/Shouvik Chowdhury.png",
     name: "Shouvik Chowdhury",
-    title: "",
+    id: 7,
+    title: "Lead Frontend",
   },
   {
     img: "/assets/company/Gazi Monir-uz-zaman.png",
     name: "Gazi Monir-uz-zaman",
-    title: "",
+    id: 8,
+    title: "Lead Backend",
   },
 
   {
     img: "/assets/company/Nurul Islam.png",
     name: "Nurul Islam ",
-    title: "",
+    id: 9,
+    title: "Frontend Developer",
   },
   {
     img: "/assets/company/Nuruzaman Milon.png",
     name: "Md. Nuruzaman Milon",
-    title: "",
+    id: 10,
+    title: "Web Developer",
   },
   {
     img: "/assets/company/AR Sahak.png",
     name: "AR Sahak",
-    title: "",
+    id: 11,
+    title: "Frontend Developer",
   },
   {
     img: "/assets/company/Raihan Ali.png",
     name: "Raihan Ali",
-    title: "",
+    id: 12,
+    title: "Project Research and Management",
   },
   {
     img: "/assets/company/Fuad Hasan.png",
     name: "Fuad Hasan",
-    title: "",
+    id: 13,
+    title: "Developer Support",
   },
 ];
 
