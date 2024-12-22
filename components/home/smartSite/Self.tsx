@@ -21,7 +21,7 @@ const Bank = () => {
           className="m-auto absolute top-0 left-0 right-0 bottom-0 scale-y-110 md:scale-150 md:px-2"
         />
       </div>
-      <div className="m-auto">
+      <div className="m-auto pt-4 ">
         <h3 className="m-auto font-semibold text-lg text-center">
           Bank Yourself
         </h3>

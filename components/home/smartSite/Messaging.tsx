@@ -75,7 +75,7 @@ const Messaging = () => {
           />
         </ScrollMotionEffect> */}
       </div>
-      <div className="m-auto py-4 bg-[#F5F5F5]">
+      <div className="m-auto mt-auto pt-6 bg-[#F5F5F5]">
         <h3 className="m-auto font-semibold text-lg text-center ">
           Encrypted Messaging
         </h3>

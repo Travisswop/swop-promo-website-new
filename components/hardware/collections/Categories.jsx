@@ -44,7 +44,7 @@ const Categories = ({ title, titleImage, products }) => {
             <div className="text-center text-white text-xl md:text-2xl flex flex-col justify-center items-center   font-light relative ">
               <div className="flex justify-center items-center  z-50">
                 <Link href="/">
-                  <div className="bg-[#686868] rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out cursor-pointer scale-125 -translate-x-4 ">
+                  <div className="bg-[#686868] rounded-full border-[1px] border-gray-400 hover:bg-[#AF97D4] transition-all duration-300 ease-in-out cursor-pointer scale-125 -translate-x-4 ">
                     <Image
                       src="/assets/site-logo/navicon.png"
                       alt="Swop Logo"

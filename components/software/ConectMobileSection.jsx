@@ -464,21 +464,21 @@ const ConectMobileSection = () => {
         id: 1,
         icon: "/assets/software/connection.png",
         title: "Connection/ Follow",
-        imageUrl: "/assets/video/businesscards.png",
+        //imageUrl: "/assets/video/businesscards.png",
         videoUrl: "/assets/video/software-connection-follow.mp4",
       },
       {
         id: 2,
         icon: "/assets/software/lead.png",
         title: "Lead Generation",
-        imageUrl: "/assets/video/wearables.png",
+        // imageUrl: "/assets/video/wearables.png",
         videoUrl: "/assets/video/software-lead-generation.mp4",
       },
       {
         id: 3,
         icon: "/assets/software/customer.png",
         title: "Customer Rentention",
-        imageUrl: "/assets/video/transactions.png",
+        //imageUrl: "/assets/video/transactions.png",
         videoUrl: "/assets/video/customer-rentention.mp4",
       },
     ],
@@ -491,21 +491,21 @@ const ConectMobileSection = () => {
         id: 4,
         icon: "/assets/software/tranc.png",
         title: "Transactions",
-        imageUrl: "/assets/video/restaurants.png",
+        //imageUrl: "/assets/video/restaurants.png",
         videoUrl: "/assets/video/transactions.mp4",
       },
       {
         id: 5,
         icon: "/assets/software/sell.png",
         title: "Sell Products",
-        imageUrl: "/assets/video/customize.png",
+        //imageUrl: "/assets/video/customize.png",
         videoUrl: "/assets/video/cstomizable-crad-tapp.mp4",
       },
       {
         id: 6,
         icon: "/assets/software/analytics.png",
         title: "Analytics",
-        imageUrl: "/assets/video/embeddables.png",
+        //imageUrl: "/assets/video/embeddables.png",
         videoUrl: "/assets/video/analytics.mp4",
       },
     ],
@@ -693,13 +693,13 @@ const ConectMobileSection = () => {
             repeatDelay: 1,
           }}
         >
-          <Image
+          {/* <Image
             width={140}
             height={120}
             src={"/assets/site-logo/chipicon.png"}
             alt="Link icon"
             className="mx-auto"
-          />
+          /> */}
         </motion.div>
       </div>
 

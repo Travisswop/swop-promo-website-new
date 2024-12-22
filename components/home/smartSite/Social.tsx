@@ -9,9 +9,10 @@ const Leads = () => {
     <ScrollMotionEffect
       effect="fade-up"
       duration="700"
-      className="max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] border border-gray-200  rounded-3xl p-4 flex flex-col justify-between"
+      className="max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] border border-gray-200  rounded-3xl p-4 flex flex-col justify-between overflow-hidden "
     >
-      <div className="w-[25%] m-auto">
+      {/* <div className="w-[25%] m-auto"> */}
+      <div className=" w-1/2 m-auto scale-125 ">
         <video
           autoPlay
           loop
@@ -25,7 +26,7 @@ const Leads = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="m-auto">
+      <div className="m-auto pt-4">
         <h3 className="m-auto font-semibold text-lg text-center">Leads</h3>
       </div>
 
