@@ -144,7 +144,7 @@ const InteractiveSection = () => {
             className=""
           />
         </ScrollMotionEffect> */}
-        <div className="flex justify-center flex-1 relative -translate-x-4 md:-translate-x-8 lg:-translate-x-12 xl:-translate-x-7 xl:w-2/4 text-center m-auto">
+        <div className="flex justify-center flex-1 relative -translate-x-[22px] md:-translate-x-[34px] lg:-translate-x-[46px] xl:-translate-x-[30px] xl:w-2/4 text-center m-auto">
           <div className="w-[70%] m-auto">
             <video
               autoPlay
