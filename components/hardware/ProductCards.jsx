@@ -36,10 +36,10 @@ const ProductCards = ({ productList }) => {
                   src={el.img}
                   quality={100}
                 />
-                <h2 className="mt-3 text-lg  text-stone-950 text-center font-bold pb-2">
+                <h2 className="mt-3 text-xl  text-stone-950 text-center font-bold pb-2">
                   {el.title}
                 </h2>
-                <p className="text-sm text-gray-400 text-center mt-1">
+                <p className="text-base text-gray-400 text-center mt-1 w-full lg:w-10/12">
                   {el.decs}
                 </p>
               </CardBody>

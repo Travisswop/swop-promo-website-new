@@ -14,71 +14,84 @@ const poppins = Poppins({
 
 const Categories = ({ title, titleImage, products }) => {
   return (
-    <div className=" h-full mx-auto flex justify-center items-center w-full px-2">
-      <div
-        className={cn(
-          "h-full w-full gradient-circle-top -z-50 !py-5 ",
-          poppins.className
-        )}
-      >
+    <div className=" mx-auto gradient-circle-top flex flex-col py-10 justify-center items-center px-2">
+      <div className={cn("h-full w-full  z-10", poppins.className)}>
         <section className=" grid grid-cols-1 gap-10 py-0  rounded-2xl ">
           <ScrollMotionEffect
             effect="fade-up"
             duration="2000"
-            className="w-full h-[545px] flex flex-col lg:flex-row gap-5 lg:gap-36 xl:gap-60 justify-start  lg:justify-center items-center relative rounded-2xl"
+            className={cn(
+              "w-full h-[550px] lg:h-[650px] flex flex-col gap-5  justify-start  items-center relative rounded-3xl py-20 bg-[url('/assets/hardware/collection/blackBg.png')] bg-cover bg-no-repeat object-cover bg-center",
+              title === "Business Card" ? "lg:pb-0" : ""
+            )}
           >
-            <Image
-              src="/assets/hardware/collection/blackBg.svg"
+            {/* <Image
+              src="/assets/hardware/collection/blackBg.png"
               alt={title}
               height={100}
               width={100}
-              className="absolute top-0 left-0 bottom-0 right-0 h-full w-full -z-10 hidden lg:block rounded-2xl"
+              className="absolute top-0 left-0 bottom-0 right-0 h-full w-full -z-10  rounded-3xl"
               quality={100}
-            />
-            <Image
-              src="/assets/hardware/collection/mobileBg.svg"
+            /> */}
+            {/* <Image
+              src="/assets/hardware/collection/blackBg.png"
               alt={title}
               height={500}
               width={500}
               quality={100}
-              className="absolute top-0 left-0 bottom-0 right-0 h-full w-full xs:scale-y-150 sm:scale-y-125 md:scale-y-100 md:scale-x-125  -z-10 rounded-2xl lg:hidden"
-            />
-            <div
-              className={cn(
-                "relative   lg:translate-x-24 xl:translate-x-24 2xl:translate-x-24 max-w-60 lg:w-[250px] place-items-start h-[80%] flex flex-col justify-center items-center",
-                title === "Business Card" &&
-                  " translate-y-5 lg:translate-y-0 scale-90 ",
-                title === "Phone Attachments" &&
-                  " translate-y-10 md:translate-y-0 xl:scale-110 ",
-                title === "Hospitality" &&
-                  "xs:scale-100 sm:scale-125 translate-y-10 lg:translate-y-0 xl:scale-150",
-                title === "Pets" &&
-                  "scale-90 translate-y-0 xl:scale-100 2xl:scale-110 lg:-translate-y-5 ",
-                title === "Wearables" &&
-                  "translate-y-10 md:translate-y-0 xl:scale-125",
-                title === "Stickers" &&
-                  "xs:scale-110 sm:scale-125 xl:scale-150 translate-y-10 lg:translate-y-0"
-              )}
-            >
+              className="absolute top-0 left-0 bottom-0 right-0 h-full w-full  -z-10 rounded-2xl lg:hidden"
+            /> */}
+            <div className="text-center text-white text-xl md:text-2xl flex flex-col justify-center items-center   font-light relative ">
+              <div className="flex justify-center items-center  z-50">
+                <Link href="/">
+                  <div className="bg-[#686868] rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out cursor-pointer scale-125 -translate-x-4 ">
+                    <Image
+                      src="/assets/site-logo/navicon.png"
+                      alt="Swop Logo"
+                      width={35}
+                      height={35}
+                      quality={100}
+                      priority
+                      className=" rounded-full animate-slow-bounce "
+                    />
+                  </div>
+                </Link>
+                {title === "Business Card" ? (
+                  <h2 className="block text-2xl md:text-3xl lg:text-5xl font-bold">
+                    {" "}
+                    {title.split(" ")[0]}
+                    <span className="font-light"> {title.split(" ")[1]}</span>
+                  </h2>
+                ) : title === "Phone Attachments" ? (
+                  <h2 className="block text-2xl md:text-3xl lg:text-5xl font-bold">
+                    {title.split(" ")[0]}
+                    <span className="font-light"> {title.split(" ")[1]}</span>
+                  </h2>
+                ) : (
+                  <h2 className="block text-2xl md:text-3xl lg:text-5xl font-bold">
+                    <span className="">{title}</span>
+                  </h2>
+                )}
+              </div>
+
+              <p className="text-base md:text-lg text-gray-400 pt-4 text-center">
+                Available Now
+              </p>
+            </div>
+            <div className="h-full overflow-hidden">
               <Image
                 src={titleImage}
                 alt={title}
                 height={400}
                 width={400}
                 quality={100}
-                className="w-full lg:scale-110"
+                className={cn(
+                  "  h-full object-contain ",
+                  title === "Business Card"
+                    ? "translate-y-0 lg:scale-125 lg:translate-y-20"
+                    : ""
+                )}
               />
-            </div>
-            <div className="text-center text-white text-xl md:text-2xl flex flex-col justify-center items-center  lg:text-3xl h-[30%] w-[468px] font-light relative -translate-y-10 lg:-translate-y-0">
-              <h2 className="">
-                <span
-                  className="block text-2xl md:text-3xl lg:text-5xl font-semibold py-2 lg:py-4
-          "
-                >
-                  {title}
-                </span>
-                Available Now
-              </h2>
             </div>
           </ScrollMotionEffect>
           <ScrollMotionEffect

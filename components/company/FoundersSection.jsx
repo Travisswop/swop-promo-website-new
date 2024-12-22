@@ -74,80 +74,75 @@ const linkInfo = [
   {
     img: "/assets/company/travis.png",
     name: "Travis Herron",
-    id: 1,
     title: "Co founder & Chairman",
   },
   {
     img: "/assets/company/neel.png",
     name: "Arjo Neel",
-    id: 2,
     title: "Co Founder & COO",
   },
+
   {
     img: "/assets/company/salman.png",
     name: "Salman H Saikote",
-    id: 3,
+
     title: "Co Founder & CTO",
   },
   {
     img: "/assets/company/Rashed Sheikh.png",
     name: "Rashed Sheikh",
-    id: 4,
+
     title: "Blockchain Advisor",
   },
   {
     img: "/assets/company/Sadit Ahsan.png",
     name: "Sadit Ahsan",
-    id: 5,
     title: "Head of Design",
+  },
+  {
+    img: "/assets/company/matt.png",
+    name: "Matt Mulligan",
+    title: "Sales and Customer Relations",
   },
   {
     img: "/assets/company/Rakibul Islam.png",
     name: "Rakibul Islam",
-    id: 6,
     title: "Lead Backend",
   },
   {
     img: "/assets/company/Shouvik Chowdhury.png",
     name: "Shouvik Chowdhury",
-    id: 7,
     title: "Lead Frontend",
   },
   {
     img: "/assets/company/Gazi Monir-uz-zaman.png",
     name: "Gazi Monir-uz-zaman",
-    id: 8,
     title: "Lead Backend",
-  },
-
-  {
-    img: "/assets/company/Nurul Islam.png",
-    name: "Nurul Islam ",
-    id: 9,
-    title: "Frontend Developer",
   },
   {
     img: "/assets/company/Nuruzaman Milon.png",
     name: "Md. Nuruzaman Milon",
-    id: 10,
     title: "Web Developer",
-  },
-  {
-    img: "/assets/company/AR Sahak.png",
-    name: "AR Sahak",
-    id: 11,
-    title: "Frontend Developer",
   },
   {
     img: "/assets/company/Raihan Ali.png",
     name: "Raihan Ali",
-    id: 12,
     title: "Project Research and Management",
   },
   {
+    img: "/assets/company/AR Sahak.png",
+    name: "AR Sahak",
+    title: "Frontend Developer",
+  },
+  {
+    img: "/assets/company/Nurul Islam.png",
+    name: "Nurul Islam ",
+    title: "Frontend Developer",
+  },
+
+  {
     img: "/assets/company/Fuad Hasan.png",
     name: "Fuad Hasan",
-    id: 13,
     title: "Developer Support",
   },
 ];

@@ -38,7 +38,8 @@ const Earn = () => {
       <div className="bg-white w-full translate-y-1 lg:translate-y-0">
         <h3 className="font-semibold text-lg text-center py-2 z-40">Earn</h3>
       </div>
-      <div className="bg-white w-full">
+
+      <div className="w-full lg:w-4/6 m-auto bg-white">
         <h4 className="text-base text-center text-gray-400 z-40">
           Tag¹ facilitates an instant and connection. Activate immersive brand
           experiences with just a tap.

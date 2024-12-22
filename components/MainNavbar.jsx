@@ -80,7 +80,7 @@ const MainNavbar = () => {
         </NavbarContent>
 
         <NavbarContent
-          className=" hidden md:flex gap-2 lg:gap-4 text-gray-300   rounded-full "
+          className=" hidden md:flex gap-2 lg:gap-4 text-white   rounded-full "
           justify="center"
         >
           <div className="bounce-nav hidden md:flex justify-between items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-12 lg:w-[400px] w-[350px]">
@@ -104,7 +104,7 @@ const MainNavbar = () => {
                 <div key={el.slug} className="">
                   <Link
                     href={el.slug}
-                    className={`text-sm md:text-sm hover:text-[#AF97D4] transition-all duration-300 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
+                    className={`text-sm md:text-base hover:text-[#AF97D4] transition-all duration-300 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
                   >
                     {el.title}
                   </Link>

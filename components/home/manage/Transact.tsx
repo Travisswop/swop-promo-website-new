@@ -36,7 +36,7 @@ const Transact = () => {
       <div>
         <h3 className="font-semibold text-lg text-center py-2">Transact</h3>
       </div>
-      <div>
+      <div className="w-full lg:w-4/6 m-auto">
         <h4 className="text-base text-center text-gray-400">
           Tag¹ facilitates an instant and connection. Activate immersive brand
           experiences with just a tap.

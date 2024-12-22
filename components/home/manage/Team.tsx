@@ -41,7 +41,8 @@ const Team = () => {
           Manage The Entire Team
         </h3>
       </div>
-      <div className="w-full flex-grow">
+
+      <div className="w-full lg:w-4/6 m-auto flex-grow">
         <h4 className="text-lg text-center text-gray-400 max-w-full flex-grow">
           Tag¹ facilitates an instant and connection. Activate immersive brand
           experiences with just a tap.
