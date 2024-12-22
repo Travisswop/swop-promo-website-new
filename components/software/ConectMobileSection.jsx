@@ -768,7 +768,7 @@ const ConectMobileSection = () => {
           <Image
             width={90}
             height={90}
-            src={"/assets/site-logo/chipicon.png"}
+            //src={"/assets/site-logo/chipicon.png"}
             alt="Link icon"
             className="mx-auto"
           />
