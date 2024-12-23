@@ -8,6 +8,7 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  cn,
 } from "@nextui-org/react";
 import { LuUserRound } from "react-icons/lu";
 import { IoCall } from "react-icons/io5";
@@ -27,16 +28,23 @@ const debounce = (func, wait) => {
 const MainNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  console.log(pathname);
   const [navbarColor, setNavbarColor] = useState(false);
 
-  const menuItems = useMemo(
-    () => [
-      { title: "Software", slug: "/software" },
-      { title: "Hardware", slug: "/hardware" },
-      { title: "Company", slug: "/company" },
-    ],
-    []
-  );
+  // const menuItems = useMemo(
+  //   () => [
+  //     { title: "Software", slug: "/software" },
+  //     { title: "Hardware", slug: "/hardware" },
+  //     { title: "Company", slug: "/company" },
+  //   ],
+  //   []
+  // );
+
+  const menuItems = [
+    { title: "Software", slug: "/software" },
+    { title: "Hardware", slug: "/hardware" },
+    { title: "Company", slug: "/company" },
+  ];
 
   const handleScroll = useCallback(
     debounce(() => {
@@ -55,7 +63,7 @@ const MainNavbar = () => {
 
   return (
     <div
-      className={`w-full m-auto z-50  fixed top-0  transition-colors duration-300 ${navbarColor ? "!bg-white shadow-small duration-1000" : "bg-transparent"}}`}
+      className={`w-full m-auto z-40 top-0  transition-colors duration-300 fixed ${navbarColor ? "!bg-white shadow-small duration-1000" : "bg-transparent"}}`}
     >
       <Navbar
         isMenuOpen={isMenuOpen}
@@ -79,7 +87,7 @@ const MainNavbar = () => {
           </NavbarBrand>
         </NavbarContent>
 
-        <NavbarContent
+        {/* <NavbarContent
           className=" hidden md:flex gap-2 lg:gap-4 text-white   rounded-full "
           justify="center"
         >
@@ -112,7 +120,7 @@ const MainNavbar = () => {
               ))}
             </NavbarItem>
           </div>
-        </NavbarContent>
+        </NavbarContent> */}
 
         <NavbarContent justify="end" className="flex items-center">
           <NavbarItem>
@@ -153,6 +161,41 @@ const MainNavbar = () => {
           ))}
         </NavbarMenu>
       </Navbar>
+      <div
+        className={cn(
+          " h-[92px] w-fit absolute top-0 m-auto left-0 right-0 z-50 flex justify-center items-center",
+          pathname === "/" ? "bounce-nav" : ""
+        )}
+      >
+        <div className="hidden md:flex justify-between items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-12 lg:w-[400px] w-[300px] -translate-x-5 lg:-translate-x-0">
+          <div className="bg-white rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out -translate-x-1">
+            <Link href="/">
+              <Image
+                src="/assets/site-logo/navicon.png"
+                alt="Swop Logo"
+                width={35}
+                height={35}
+                quality={100}
+                priority
+                className=" rounded-full animate-slow-bounce "
+              />
+            </Link>
+          </div>
+
+          <div className="flex-grow  flex items-center justify-around">
+            {menuItems.map((el) => (
+              <div key={el.slug} className="">
+                <Link
+                  href={el.slug}
+                  className={`text-sm md:text-base hover:text-[#AF97D4] transition-all duration-300 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
+                >
+                  {el.title}
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

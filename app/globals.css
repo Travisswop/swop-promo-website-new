@@ -202,7 +202,6 @@ video::-webkit-media-controls-panel {
   }
 }
 
-
 .animate-slow-bounce {
   animation: slow-bounce 2.5s infinite ease-in-out;
 }
@@ -240,17 +239,17 @@ video::-webkit-media-controls-panel {
     border: none;
   }
 }
-.bounce-nav{
-  animation: bounce-nav 3s normal ;
+.bounce-nav {
+  animation: bounce-nav 3s normal;
 }
 @keyframes bounce-nav {
   0% {
     transform: translateY(-200%);
   }
-80% {
+  80% {
     transform: translateY(-200%);
   }
- 
+
   85% {
     transform: translateY(50%);
   }
@@ -265,9 +264,8 @@ video::-webkit-media-controls-panel {
   }
 }
 
-
-.fade-up{
-  animation: fade-up 1s normal ;
+.fade-up {
+  animation: fade-up 1s forwards;
 }
 @keyframes fade-up {
   0% {

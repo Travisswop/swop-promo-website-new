@@ -7,6 +7,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import MainNavbar from "@/components/MainNavbar";
 import Footer from "@/components/Footer";
 
+import FloatingMenu from "@/components/FloatingMenu";
+
 const baloo = Baloo_2({ subsets: ["latin"] });
 const fira = Figtree({
   subsets: ["latin"],
@@ -33,7 +35,9 @@ export default function RootLayout({ children }) {
       <body className={fira.className}>
         <Providers>
           <MainNavbar />
-          <div className=" mt-28 relative z-10">{children}</div>
+          {/* <FloatingMenu /> */}
+
+          <div className=" mt-28 relative -z-0">{children}</div>
           <Analytics />
           <SpeedInsights />
           <Footer />
