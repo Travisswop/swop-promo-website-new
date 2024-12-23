@@ -6,7 +6,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const ProductCards = ({ productList }) => {
   return (
-    <div className="gap-6 grid auto-rows-max grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="gap-6 grid auto-rows-min grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {productList?.map((el, index) => (
         <ScrollMotionEffect
           effect="fade-up"
