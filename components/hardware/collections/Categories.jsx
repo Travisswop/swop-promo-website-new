@@ -78,7 +78,11 @@ const Categories = ({ title, titleImage, products }) => {
                 Available Now
               </p>
             </div>
-            <div className="h-full overflow-hidden">
+            <ScrollMotionEffect
+              effect="zoom-in-up"
+              duration="800"
+              className="h-full overflow-hidden"
+            >
               <Image
                 src={titleImage}
                 alt={title}
@@ -92,7 +96,7 @@ const Categories = ({ title, titleImage, products }) => {
                     : ""
                 )}
               />
-            </div>
+            </ScrollMotionEffect>
           </ScrollMotionEffect>
           <ScrollMotionEffect
             effect="fade-up"
