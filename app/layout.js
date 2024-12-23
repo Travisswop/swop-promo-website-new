@@ -7,8 +7,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import MainNavbar from "@/components/MainNavbar";
 import Footer from "@/components/Footer";
 
-import FloatingMenu from "@/components/FloatingMenu";
-
 const baloo = Baloo_2({ subsets: ["latin"] });
 const fira = Figtree({
   subsets: ["latin"],
