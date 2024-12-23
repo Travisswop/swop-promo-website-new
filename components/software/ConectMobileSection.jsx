@@ -517,29 +517,29 @@ const ConectMobileSection = () => {
     [featuresInfoLeft, featuresInfoRight]
   );
 
-  const hoverItemSelect = useCallback((value) => {
-    setHoveredItem(value?.id);
-    setHoverImgUrl(value?.imageUrl);
-    setHoverVideoUrl(value?.videoUrl);
+  // const hoverItemSelect = useCallback((value) => {
+  //   setHoveredItem(value?.id);
+  //   setHoverImgUrl(value?.imageUrl);
+  //   setHoverVideoUrl(value?.videoUrl);
 
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
+  //   if (videoRef.current) {
+  //     videoRef.current.pause();
+  //     videoRef.current.currentTime = 0;
+  //   }
 
-    // Prefetch video URL
-    if (value?.videoUrl) {
-      fetch(value.videoUrl, { method: "HEAD" })
-        .then((response) => {
-          if (response.ok) {
-            console.log(`Prefetched video: ${value.videoUrl}`);
-          }
-        })
-        .catch((error) =>
-          console.error(`Failed to prefetch video: ${value.videoUrl}`, error)
-        );
-    }
-  }, []);
+  //   // Prefetch video URL
+  //   if (value?.videoUrl) {
+  //     fetch(value.videoUrl, { method: "HEAD" })
+  //       .then((response) => {
+  //         if (response.ok) {
+  //           console.log(`Prefetched video: ${value.videoUrl}`);
+  //         }
+  //       })
+  //       .catch((error) =>
+  //         console.error(`Failed to prefetch video: ${value.videoUrl}`, error)
+  //       );
+  //   }
+  // }, []);
 
   useEffect(() => {
     let playTimer;
@@ -765,13 +765,13 @@ const ConectMobileSection = () => {
             repeatDelay: 1,
           }}
         >
-          <Image
+          {/* <Image
             width={90}
             height={90}
-            //src={"/assets/site-logo/chipicon.png"}
+            src={"/assets/site-logo/chipicon.png"}
             alt="Link icon"
             className="mx-auto"
-          />
+          /> */}
         </motion.div>
       </div>
 
