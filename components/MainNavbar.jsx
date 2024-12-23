@@ -87,11 +87,16 @@ const MainNavbar = () => {
           </NavbarBrand>
         </NavbarContent>
 
-        {/* <NavbarContent
+        <NavbarContent
           className=" hidden md:flex gap-2 lg:gap-4 text-white   rounded-full "
           justify="center"
         >
-          <div className="bounce-nav hidden md:flex justify-between items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-12 lg:w-[400px] w-[350px]">
+          <div
+            className={cn(
+              " hidden md:flex justify-between items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-12 lg:w-[400px] w-[350px]",
+              pathname === "/" ? "bounce-nav" : ""
+            )}
+          >
             <NavbarItem>
               <div className="bg-white rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out -translate-x-1">
                 <Link href="/">
@@ -120,7 +125,7 @@ const MainNavbar = () => {
               ))}
             </NavbarItem>
           </div>
-        </NavbarContent> */}
+        </NavbarContent>
 
         <NavbarContent justify="end" className="flex items-center">
           <NavbarItem>
@@ -161,7 +166,7 @@ const MainNavbar = () => {
           ))}
         </NavbarMenu>
       </Navbar>
-      <div
+      {/* <div
         className={cn(
           " h-[92px] w-fit absolute top-0 m-auto left-0 right-0 z-50 flex justify-center items-center",
           pathname === "/" ? "bounce-nav" : ""
@@ -195,7 +200,7 @@ const MainNavbar = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

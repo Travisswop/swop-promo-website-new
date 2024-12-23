@@ -113,7 +113,7 @@ const Categories = ({ title, titleImage, products }) => {
                   <div className="place-self-start text-lg font-semibold">
                     <h5>{el.name}</h5>
                   </div>
-                  <div>
+                  <div className="w-[200px] ">
                     <Image
                       src={el.image}
                       alt={el.title}
