@@ -88,43 +88,46 @@ const MainNavbar = () => {
         </NavbarContent>
 
         <NavbarContent
-          className=" hidden md:flex gap-2 lg:gap-4 text-white   rounded-full "
+          className=" hidden md:flex gap-2 lg:gap-4 text-white   rounded-full  "
           justify="center"
         >
-          <div
-            className={cn(
-              " hidden md:flex justify-between items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-12 lg:w-[400px] w-[350px]",
-              pathname === "/" ? "bounce-nav" : ""
-            )}
-          >
-            <NavbarItem>
-              <div className="bg-white rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out -translate-x-1">
-                <Link href="/">
-                  <Image
-                    src="/assets/site-logo/navicon.png"
-                    alt="Swop Logo"
-                    width={35}
-                    height={35}
-                    quality={100}
-                    priority
-                    className=" rounded-full animate-slow-bounce "
-                  />
-                </Link>
-              </div>
-            </NavbarItem>
-            <NavbarItem className="flex-grow  flex items-center justify-around">
-              {menuItems.map((el) => (
-                <div key={el.slug} className="">
-                  <Link
-                    href={el.slug}
-                    className={`text-sm md:text-base hover:text-[#AF97D4] transition-all duration-300 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
-                  >
-                    {el.title}
+          <NavbarItem>
+            <div
+              className={cn(
+                " hidden md:flex justify-between items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-12 w-full",
+                pathname === "/" ? "bounce-nav" : ""
+              )}
+            >
+              <div className="hidden md:flex justify-between items-center gap-2  text-gray-400  bg-[#191919] rounded-full pl-3 h-12  -translate-x-5 ">
+                <div className="bg-white rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out -translate-x-1 mr-auto">
+                  <Link href="/">
+                    <Image
+                      src="/assets/site-logo/navicon.png"
+                      alt="Swop Logo"
+                      width={35}
+                      height={35}
+                      quality={100}
+                      priority
+                      className=" rounded-full animate-slow-bounce "
+                    />
                   </Link>
                 </div>
-              ))}
-            </NavbarItem>
-          </div>
+
+                <div className="flex-grow h-full  flex items-center justify-around">
+                  {menuItems.map((el) => (
+                    <div
+                      key={el.slug}
+                      className={`hover:bg-[#383838] hover:text-gray-100 px-2 lg:px-3 py-1.5 rounded-3xl transition-all duration-200 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
+                    >
+                      <Link href={el.slug} className={`text-sm md:text-base `}>
+                        {el.title}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </NavbarItem>
         </NavbarContent>
 
         <NavbarContent justify="end" className="flex items-center">
