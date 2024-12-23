@@ -17,7 +17,7 @@ const HardwareCollections = () => {
       <Categories
         title={"Hospitality"}
         titleImage={
-          "/assets/hardware/collection/hospitality/HospitalityCards.svg"
+          "/assets/hardware/collection/hospitality/HospitalityCards.png"
         }
         products={hardwareCollections.Hospitality}
       />
@@ -28,12 +28,12 @@ const HardwareCollections = () => {
       />
       <Categories
         title={"Wearables"}
-        titleImage={"/assets/hardware/collection/wearables/wearable.svg"}
+        titleImage={"/assets/hardware/collection/wearables/wearable.png"}
         products={hardwareCollections.Wearables}
       />
       <Categories
         title={"Stickers"}
-        titleImage={"/assets/hardware/collection/stickers/sticker.svg"}
+        titleImage={"/assets/hardware/collection/stickers/sticker.png"}
         products={hardwareCollections.Stickers}
       />
     </div>
