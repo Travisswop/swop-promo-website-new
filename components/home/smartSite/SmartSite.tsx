@@ -23,9 +23,9 @@ const SmartSite = () => {
         <Image
           src="/assets/home/smart-site/smartsite.png"
           alt="SmartSite"
-          width={350}
-          height={380}
-          className="m-auto relative left-3"
+          width={800}
+          height={800}
+          className="m-auto relative w-[350px] "
           quality={100}
         />
         <div className="lg:w-2/3 m-auto">

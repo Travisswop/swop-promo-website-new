@@ -11,14 +11,14 @@ const Bank = () => {
       duration="700"
       className="max-w-[420px] md:w-full h-full m-auto bg-[#F5F5F5] rounded-3xl border border-gray-200  p-4 flex flex-col justify-between"
     >
-      <div className="relative h-[185px] w-full">
+      <div className="h-[185px]">
         <Image
           src="/assets/home/smart-site/bank.png"
           alt="bank"
-          width={300}
-          height={150}
+          width={1000}
+          height={1000}
           quality={100}
-          className="m-auto absolute top-0 left-0 right-0 bottom-0 scale-y-110 md:scale-125 md:px-2"
+          className="m-auto relative top-0 left-0 right-0 bottom-0 lg:-translate-y-2"
         />
       </div>
       <div className="m-auto pt-4 ">
