@@ -46,8 +46,8 @@ const ProductDetails = () => {
   return (
     <div>
       <ScrollMotionEffect effect="fade-up" duration="2000">
-        <div class="grid grid-col-1 md:grid-rows-2 grid-flow-col gap-4 items-stretch justify-center">
-          <div class="row-span-1 bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl w-[500px] h-auto">
+        <div class="grid auto-cols-min grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch justify-center">
+          <div class=" bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl  h-auto">
             <div>
               <Image
                 width={400}
@@ -67,7 +67,7 @@ const ProductDetails = () => {
             </p>
           </div>
 
-          <div class="row-span-1 bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl w-[500px] h-auto">
+          <div class=" bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl  h-auto">
             <div>
               <Image
                 width={400}
@@ -87,7 +87,7 @@ const ProductDetails = () => {
             </p>
           </div>
 
-          <div class="row-span-1 md:row-span-2 bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl w-[500px]">
+          <div class="md:row-start-1 md:col-start-2 lg:col-start-2  lg:row-start-1 md:row-span-2 bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl ">
             <div className="">
               <h2 className="mt-3 text-2xl font-bold text-center text-stone-950 ">
                 Proximity is all it takes.
@@ -114,7 +114,7 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          <div class="row-span-1 bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl w-[500px] h-auto">
+          <div class=" bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl  h-auto">
             <div>
               <Image
                 width={400}
@@ -134,7 +134,7 @@ const ProductDetails = () => {
             </p>
           </div>
 
-          <div class="row-span-1 bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl w-[500px] h-auto">
+          <div class=" bg-gradient-to-br from-[#FAFAFA] to-[#F5F5F5] p-5 rounded-xl  h-auto">
             <div>
               <Image
                 width={400}
@@ -164,10 +164,15 @@ const ProductDetails = () => {
         </h2>
       </ScrollMotionEffect>
 
-      <div className="grid items-center grid-cols-1 gap-4 mt-10 md:grid-cols-3">
+      <div className="grid auto-rows-max auto-cols-max items-center grid-cols-1 gap-4 mt-10 md:grid-cols-3 pb-20">
         {clientComments?.map((el, index) => (
-          <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
-            <div className="bg-[#FFFFFF] rounded-xl p-6 shadow-lg">
+          <ScrollMotionEffect
+            effect="fade-up"
+            duration="2000"
+            key={index}
+            className={"h-full"}
+          >
+            <div className="bg-[#FFFFFF] rounded-xl p-6 shadow-lg h-full">
               <div className="flex items-start justify-start gap-3">
                 <Image
                   width={50}
