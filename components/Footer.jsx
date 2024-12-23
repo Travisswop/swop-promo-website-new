@@ -70,9 +70,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="my-6 border-gray-600 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
-        <p className="text-black font-normal text-md md:text-lg text-center mb-4 md:mb-0">
+      <hr className="my-6 border-gray-600 sm:mx-auto dark:border-gray-700 lg:my-4" />
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mb-4">
+        <p className="text-black font-normal text-md md:text-lg text-center  ">
           ©2024 Swop ®All Rights Reserved.
         </p>
         <div className="flex items-center gap-x-2">
