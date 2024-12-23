@@ -86,7 +86,7 @@ const Categories = ({ title, titleImage, products }) => {
               <Image
                 src={titleImage}
                 alt={title}
-                height={400}
+                height={1000}
                 width={400}
                 quality={100}
                 className={cn(
@@ -117,8 +117,8 @@ const Categories = ({ title, titleImage, products }) => {
                     <Image
                       src={el.image}
                       alt={el.title}
-                      width={200}
-                      height={200}
+                      width={1000}
+                      height={1000}
                       quality={100}
                     />
                   </div>

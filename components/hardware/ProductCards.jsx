@@ -29,7 +29,7 @@ const ProductCards = ({ productList }) => {
 
                 <Image
                   height={250}
-                  width={350}
+                  width={1000}
                   alt={el.title}
                   style={{ objectFit: "contain" }}
                   className="w-full object-cover h-auto lg:h-[420px] "
