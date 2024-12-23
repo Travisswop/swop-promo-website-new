@@ -15,7 +15,7 @@ const Analytics = () => {
     >
       <div className="relative h-[185px] w-full overflow-hidden rounded-2xl ">
         <Image
-          src="/assets/home/smart-site/analytics.svg"
+          src="/assets/home/smart-site/analytics.png"
           alt="bank"
           width={500}
           height={185}

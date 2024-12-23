@@ -21,7 +21,7 @@ const SmartSite = () => {
           </h3>
         </div>
         <Image
-          src="/assets/home/smart-site/smartsite.svg"
+          src="/assets/home/smart-site/smartsite.png"
           alt="SmartSite"
           width={350}
           height={380}

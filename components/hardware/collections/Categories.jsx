@@ -102,13 +102,13 @@ const Categories = ({ title, titleImage, products }) => {
             effect="fade-up"
             duration="2000"
             delay="100"
-            className=" px-5 flex flex-row flex-wrap gap-10   justify-center items-center gradient-circle-top -z-50"
+            className=" px-5 flex flex-row flex-wrap gap-10   justify-center items-center gradient-circle-top "
           >
             {products.map((el) => {
               return (
                 <div
                   key={el.id}
-                  className="py-8 px-5 bg-gradient-to-t from-[#F9F9F9] to-[#f7f7f7] rounded-[2rem] flex flex-col justify-between items-center h-[330px] w-[320px] border-gray-300 border-1"
+                  className="py-8 px-5 bg-gradient-to-t from-[#F9F9F9] to-[#f7f7f7] rounded-[2rem] flex flex-col justify-between items-center h-[330px] w-[320px]  border-1 hover:-translate-y-2 transition-all ease-in-out duration-250 hover:border-gray-300"
                 >
                   <div className="place-self-start text-lg font-semibold">
                     <h5>{el.name}</h5>

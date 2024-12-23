@@ -18,7 +18,7 @@ const ProductCards = ({ productList }) => {
             <Card
               shadow="sm"
               isPressable
-              className="bg-[#F5F5F5] h-full border border-gray-200"
+              className="bg-[#F5F5F5] h-full border border-gray-200 hover:-translate-y-3 transition-all duration-300 ease-in-out"
             >
               <CardBody className="overflow-visible p-4 items-center justify-center">
                 {/* <div className="bg-[#E5E5E5] w-[16%] flex justify-center mx-auto  mt-4 rounded-full">

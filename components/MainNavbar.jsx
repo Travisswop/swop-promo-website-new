@@ -167,7 +167,7 @@ const MainNavbar = () => {
           pathname === "/" ? "bounce-nav" : ""
         )}
       >
-        <div className="hidden md:flex justify-between items-center gap-2  text-gray-300  bg-[#191919] rounded-full p-3 h-12 lg:w-[400px] w-[300px] -translate-x-5 lg:-translate-x-0">
+        <div className="hidden md:flex justify-between items-center gap-2  text-gray-400  bg-[#191919] rounded-full pl-3 h-12 lg:w-[400px] w-[300px] -translate-x-5 lg:-translate-x-0">
           <div className="bg-white rounded-full hover:bg-[#AF97D4] transition-all duration-300 ease-in-out -translate-x-1">
             <Link href="/">
               <Image
@@ -182,13 +182,13 @@ const MainNavbar = () => {
             </Link>
           </div>
 
-          <div className="flex-grow  flex items-center justify-around">
+          <div className="flex-grow h-full  flex items-center justify-around">
             {menuItems.map((el) => (
-              <div key={el.slug} className="">
-                <Link
-                  href={el.slug}
-                  className={`text-sm md:text-base hover:text-[#AF97D4] transition-all duration-300 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
-                >
+              <div
+                key={el.slug}
+                className={`hover:bg-[#383838] hover:text-gray-100 px-3 py-1.5 rounded-3xl transition-all duration-200 ease-in-out ${pathname === el.slug ? "text-[#AF97D4]" : ""}`}
+              >
+                <Link href={el.slug} className={`text-sm md:text-base `}>
                   {el.title}
                 </Link>
               </div>
