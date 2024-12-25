@@ -6,7 +6,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const ProductCards = ({ productList }) => {
   return (
-    <div className="gap-6 grid auto-rows-min grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="gap-6 grid auto-rows-min  grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {productList?.map((el, index) => (
         <ScrollMotionEffect
           effect="fade-up"
@@ -28,14 +28,43 @@ const ProductCards = ({ productList }) => {
                 </div> */}
 
                 <Image
+                  height={150}
+                  width={1000}
+                  alt={el.title}
+                  style={{ objectFit: "contain" }}
+                  className="w-full object-cover h-auto  hidden lg:block xl:hidden"
+                  src={el.img}
+                  quality={100}
+                />
+                <Image
+                  height={200}
+                  width={1000}
+                  alt={el.title}
+                  style={{ objectFit: "contain" }}
+                  className="w-full object-cover h-auto  hidden xl:block 2xl:hidden"
+                  src={el.img}
+                  quality={100}
+                />
+                <Image
                   height={250}
                   width={1000}
                   alt={el.title}
                   style={{ objectFit: "contain" }}
-                  className="w-full object-cover h-auto lg:h-[420px] "
+                  className="w-full object-cover h-auto  hidden 2xl:block "
                   src={el.img}
                   quality={100}
                 />
+                <div className="relative h-[150px] lg:h-[250px] w-full lg:hidden">
+                  <Image
+                    width={800}
+                    height={150}
+                    alt={el.title}
+                    style={{ objectFit: "contain" }}
+                    src={el.img}
+                    className="absolute w-full h-full object-contain"
+                    quality={100}
+                  />
+                </div>
                 <h2 className="mt-3 text-xl  text-stone-950 text-center font-bold pb-2">
                   {el.title}
                 </h2>
