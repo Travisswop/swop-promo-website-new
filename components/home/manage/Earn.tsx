@@ -41,8 +41,8 @@ const Earn = () => {
 
       <div className="w-full lg:w-4/6 m-auto bg-white">
         <h4 className="text-base text-center text-gray-400 z-40">
-          Tag¹ facilitates an instant and connection. Activate immersive brand
-          experiences with just a tap.
+          Swop Socialfi brings the power back to individual by rewarding your
+          digital footprint.
         </h4>
       </div>
     </ScrollMotionEffect>

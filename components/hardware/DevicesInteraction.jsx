@@ -186,8 +186,8 @@ const DevicesInteraction = () => {
       //  duration="2000"
       >
         <p className="text-lg text-stone-950 text-center mt-4 max-w-[600px] mx-auto">
-          Program the devices with the Swop App. Will tap on other devices with
-          or without the swop app downloaded.
+          Program our devices in the app. Our devices can be tapped on any
+          phone, whether they have the swop app or not.
         </p>
       </div>
 

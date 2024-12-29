@@ -30,8 +30,8 @@ const SmartSite = () => {
         />
         <div className="lg:w-2/3 m-auto">
           <h4 className="text-base text-center text-gray-400 pt-4 ">
-            Use your smartsite as your companies townsquare and share it with
-            NFC, QR or Apple Wallet.
+            Collect data from your employees sales and marketing interactions to
+            help make informed decisions and grow your companies network.
           </h4>
         </div>
       </div>

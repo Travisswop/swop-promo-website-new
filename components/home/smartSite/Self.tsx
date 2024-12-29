@@ -29,8 +29,8 @@ const Bank = () => {
 
       <div className="lg:w-2/3 m-auto">
         <h5 className="text-base text-center text-gray-400">
-          Accept Payments directly your Smartsites and it deposits instantly in
-          your wallet.
+          Get your own virtual account that lets you send and receive payments
+          globally.
         </h5>
       </div>
     </ScrollMotionEffect>

@@ -38,8 +38,8 @@ const Transact = () => {
       </div>
       <div className="w-full lg:w-4/6 m-auto">
         <h4 className="text-base text-center text-gray-400">
-          Tag¹ facilitates an instant and connection. Activate immersive brand
-          experiences with just a tap.
+          Accept Crypto payment for your store today. Instantly convert card
+          payments or crypto into USDC.
         </h4>
       </div>
     </ScrollMotionEffect>

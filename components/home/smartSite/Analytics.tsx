@@ -30,8 +30,7 @@ const Analytics = () => {
 
       <div className="px-4 pb-4">
         <h4 className="text-base text-center lg:w-2/3 m-auto text-gray-400">
-          Track your employees networking and collect data for your CRM while
-          providing insights to increase ROI
+          Earn tokens and receive useful insights from your Smartsite.
         </h4>
       </div>
     </ScrollMotionEffect>

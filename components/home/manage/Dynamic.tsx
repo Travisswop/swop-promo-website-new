@@ -29,8 +29,8 @@ const Dynamic = () => {
       </div>
       <div className="w-full lg:w-4/6 m-auto">
         <h4 className="text-base text-center text-gray-400">
-          Tag¹ facilitates an instant and connection. Activate immersive brand
-          experiences with just a tap.
+          The last QR your company will need. Update on the go. No more printing
+          out a new QR every time you update a link.
         </h4>
       </div>
     </ScrollMotionEffect>

@@ -32,8 +32,8 @@ const Leads = () => {
 
       <div className=" lg:w-2/3 m-auto">
         <h5 className="text-base text-center text-gray-400">
-          Leads from your Smartsites flow right to the dashboard where you earn
-          $Swop for verified Leads
+          Leads get sent directly to your swop dashboard where you can export to
+          your CRM.
         </h5>
       </div>
     </ScrollMotionEffect>
