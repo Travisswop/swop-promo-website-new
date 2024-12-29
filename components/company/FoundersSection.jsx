@@ -151,11 +151,11 @@ const FoundersSection = () => {
   return (
     <div>
       <ScrollMotionEffect effect="fade-right" duration="2000">
-        <h2
+        <h1
           className={`text-stone-950 xs:text-3xl ms:text-4xl md:text-5xl font-bold text-center !leading-normal`}
         >
           Founders
-        </h2>
+        </h1>
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-left" duration="2000">

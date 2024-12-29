@@ -14,7 +14,8 @@ const ProductCards = ({ productList }) => {
           delay={500}
           key={index}
         >
-          <Link href={`hardware/${el?.slug}`}>
+          {/* <Link href={`hardware/${el?.slug}`}> */}
+          <Link href={`hardware-collection`}>
             <Card
               shadow="sm"
               isPressable
